@@ -2,26 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/**
+ * Main CSS Variables
+ */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --tp-color-white: #fff;
+  --tp-color-black: #000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  html,
+  body {
+    font-size: 16px;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply m-0 p-0 font-black;
+  }
 }
