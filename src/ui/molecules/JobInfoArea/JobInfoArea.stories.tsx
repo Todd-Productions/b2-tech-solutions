@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react"
 import JobInfoArea from "./JobInfoArea"
 
 const meta: Meta<typeof JobInfoArea> = {
-  title: "ui/moleculs/JobInfoArea",
+  title: "ui/molecules/JobInfoArea",
   component: JobInfoArea,
 }
 

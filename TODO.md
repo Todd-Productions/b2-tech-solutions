@@ -1,6 +1,7 @@
 # Atoms
 
 - [x] ImageCard
+  - [ ] Switch to next image
 - [-] Button
   - [x] White bg, black border & text
   - [x] Black bg, white text
