@@ -3,7 +3,7 @@ import cns from "classnames"
 
 import "./button.css"
 
-export type ButtonColors = "primary" | "danger" | "default"
+export type ButtonColors = "primary" | "black" | "default"
 
 export interface ButtonProps {
   type?: "submit" | "button"
@@ -33,7 +33,7 @@ const Button: React.FC<ButtonProps> = (props) => {
 
 Button.defaultProps = {
   type: "button",
-  color: "default",
+  color: "black",
 }
 
 export default Button

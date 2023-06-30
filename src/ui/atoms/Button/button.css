@@ -1,14 +1,15 @@
 .btn-primary {
-  background: var(--tp-color-white);
-  color: var(--tp-color-blue-500);
+  background: linear-gradient(90deg, #005422, transparent) #69ef5d;
+  color: var(--tp-color-white);
   border: 3px solid var(--tp-color-blue-500);
-  display: inline-block;
+  border-radius: 12px;
+  transition: background-color 0.5s;
 }
 
-.btn-primary:hover {
-  background: var(--tp-color-blue-700);
-  color: var(--tp-color-white);
+.btn-primary:hover,
+.btn-primary:focus {
   text-decoration: none;
+  background-color: var(--tp-color-green-500);
 }
 
 .btn-primary[disabled]:hover {
@@ -17,25 +18,27 @@
 
 .btn-default {
   border: var(--tp-color-grey-600) 1px solid;
+  border-radius: 12px;
   color: var(--tp-color-grey-600);
 }
 
 .btn-default:hover {
-  background: var(--tp-color-white);
-  border-color: var(--tp-color-grey-600);
+  color: var(--tp-color-white);
+  border-color: var(--tp-color-white);
+  background-color: var(--tp-color-green-500);
+  transition-duration: 0.5s;
+  transition-property: background-color;
+}
+
+.btn-black {
+  border: 1px solid #fbfff526;
+  border-radius: 12px;
+  background-color: var(--tp-color-grey-600);
   color: var(--tp-color-white);
 }
 
-.btn-danger {
-  color: var(--tp-color-red-500);
-  background: var(--tp-color-white);
-  border-color: var(--tp-color-red-500) !important;
-  border-width: 3px !important;
-}
-
-.btn-danger:hover {
-  background: var(--tp-color-red-500);
-  color: var(--tp-color-white);
+.btn-black:after {
+  content: ".";
 }
 
 .btn-lg {

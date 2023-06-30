@@ -18,6 +18,7 @@
 @layer base {
   html,
   body {
+    @apply text-grey-500 font-sans;
     font-size: 16px;
   }
 

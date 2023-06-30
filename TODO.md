@@ -1,11 +1,11 @@
 # Atoms
 
 - [x] ImageCard
-- [ ] Button
-  - [ ] White bg, black border & text
-  - [ ] Black bg, white text
-  - [ ] Green (gradient) bg, white text
-  - [ ] Black bg, green gradient text
+- [-] Button
+  - [x] White bg, black border & text
+  - [x] Black bg, white text
+  - [x] Green (gradient) bg, white text
+  - [ ] Black bg, green text (only for active page)
 - [ ] JobContentArea
   - [ ] Split section (Left: title, dates, company | Right: bullet list)
   - [ ] Job Image
