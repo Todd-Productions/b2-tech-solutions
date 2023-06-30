@@ -6,7 +6,7 @@
   - [x] Black bg, white text
   - [x] Green (gradient) bg, white text
   - [ ] Black bg, green text (only for active page)
-- [ ] JobContentArea
-  - [ ] Split section (Left: title, dates, company | Right: bullet list)
+- [-] JobContentArea
+  - [x] Split section (Left: title, dates, company | Right: bullet list)
   - [ ] Job Image
     - [ ] Img, Bottom left excerpt

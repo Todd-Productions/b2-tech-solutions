@@ -1,0 +1,6 @@
+export { default as Button } from "./Button/Button"
+export { default as SectionHeading } from "./SectionHeading/SectionHeading"
+export { default as SectionSubHeading } from "./SectionSubHeading/SectionSubHeading"
+export { default as Section } from "./Section/Section"
+export { default as Hero } from "./Hero/Hero"
+export { default as ImageCard } from "./ImageCard/ImageCard"

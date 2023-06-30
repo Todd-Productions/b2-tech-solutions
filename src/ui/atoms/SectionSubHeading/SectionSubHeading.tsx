@@ -11,7 +11,7 @@ const SectionSubHeading: React.FC<SectionSubHeadingProps> = (props) => {
 
   return (
     <h3
-      className={cns("font-bold text-lg mb-4 relative capitalized", {
+      className={cns("font-bold text-xl mb-2 relative capitalize", {
         "text-green-600": textGreen,
         "text-grey-500": !textGreen,
       })}
@@ -19,10 +19,6 @@ const SectionSubHeading: React.FC<SectionSubHeadingProps> = (props) => {
       {children}
     </h3>
   )
-}
-
-SectionSubHeading.defaultProps = {
-  textGreen: true,
 }
 
 export default SectionSubHeading
