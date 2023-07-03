@@ -11,7 +11,8 @@
     "type-check": "tsc -p tsconfig.json",
     "precommit": "lint-staged && yarn type-check",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "20.3.1",

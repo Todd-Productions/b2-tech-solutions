@@ -1,9 +1,9 @@
 import React from "react"
 import Image from "next/image"
-import { UrlObject } from "url"
+import { UrlType } from "@/types"
 
 export interface JobImageProps {
-  img: string | UrlObject
+  img: UrlType
   excerpt: string
 }
 
@@ -12,7 +12,7 @@ const JobImageCard: React.FC<JobImageProps> = (props) => {
   return (
     <div className="card w-60 h-60 relative">
       <Image src={img as string} alt="" fill />
-      <p className="absolute">right here</p>
+      <p className="absolute text-white">{excerpt}</p>
     </div>
   )
 }

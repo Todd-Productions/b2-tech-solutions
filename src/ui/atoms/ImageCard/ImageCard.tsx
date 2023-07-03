@@ -1,9 +1,9 @@
 import React from "react"
-import { UrlObject } from "url"
+import { UrlType } from "@/types"
 import "./ImageCard.css"
 
 export interface ImageCardProps {
-  img: string | UrlObject
+  img: UrlType
 }
 
 const ImageCard: React.FC<ImageCardProps> = (props) => {

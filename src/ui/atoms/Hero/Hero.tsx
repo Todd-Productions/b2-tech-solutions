@@ -1,5 +1,6 @@
+import React from "react"
+import { UrlType } from "@/types"
 import "./hero.css"
-import { UrlType } from "../../../types"
 
 export interface HeroProps {
   img: UrlType
