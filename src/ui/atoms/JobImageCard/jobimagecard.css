@@ -1,0 +1,21 @@
+.job-card {
+  max-width: 1200px;
+  max-height: 750px;
+  width: 900px;
+  height: 500px;
+  position: relative;
+}
+
+.job-card-img {
+  border-radius: 12px;
+}
+
+.job-card-excerpt {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  border-radius: 999px;
+  color: var(--tp-color-black);
+  background-color: var(--tp-color-white);
+  padding: 25px;
+}

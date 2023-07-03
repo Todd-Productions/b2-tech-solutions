@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       colors: {
@@ -15,8 +13,8 @@ module.exports = {
           500: "#383838",
         },
         black: {
-          500: "#021E0E"
-        }
+          500: "#021E0E",
+        },
       },
       fontFamily: {
         sans: ["Neue Montreal", "sans-serif"],

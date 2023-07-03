@@ -1,15 +1,15 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react"
 
-import Hero from "./Hero";
+import Hero from "./Hero"
 
 const meta: Meta<typeof Hero> = {
   title: "ui/atoms/Hero",
   component: Hero,
-};
+}
 
-export default meta;
+export default meta
 
-type Story = StoryObj<typeof Hero>;
+type Story = StoryObj<typeof Hero>
 
 export const Default: Story = {
   render: (args: any) => <Hero {...args} />,
@@ -17,4 +17,4 @@ export const Default: Story = {
     ...Hero.defaultProps,
     img: "https://source.unsplash.com/random",
   },
-};
+}
