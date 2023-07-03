@@ -1,0 +1,13 @@
+@import "tailwindcss/base";
+
+@layer base {
+  .footer {
+    flex-direction: column;
+  }
+
+  @screen md {
+    .footer {
+      flex-direction: initial;
+    }
+  }
+}

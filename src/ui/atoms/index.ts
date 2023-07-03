@@ -4,3 +4,5 @@ export { default as SectionSubHeading } from "./SectionSubHeading/SectionSubHead
 export { default as Section } from "./Section/Section"
 export { default as Hero } from "./Hero/Hero"
 export { default as ImageCard } from "./ImageCard/ImageCard"
+export { default as Wrapper } from "./Wrapper/Wrapper"
+export { default as JobImageCard } from "./JobImageCard/JobImageCard"
