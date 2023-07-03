@@ -1,5 +1,6 @@
 import React from "react"
 import { UrlType } from "@/types"
+import Image from "next/image"
 import "./ImageCard.css"
 
 export interface ImageCardProps {
@@ -9,10 +10,9 @@ export interface ImageCardProps {
 const ImageCard: React.FC<ImageCardProps> = (props) => {
   const { img } = props
   return (
-    <div
-      className="card rounded-3xl bg-cover bg-no-repeat bg-center"
-      style={{ backgroundImage: `url(${img})` }}
-    />
+    <div className="image-card">
+      <Image className="image-card-img" src={img as string} alt="tile" fill />
+    </div>
   )
 }
 

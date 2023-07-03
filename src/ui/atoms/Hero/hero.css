@@ -1,5 +1,10 @@
 .hero {
-  background-size: cover;
   height: 300px;
   width: 100%;
+  position: relative;
+}
+
+.hero-img {
+  object-fit: cover;
+  object-position: center center;
 }
