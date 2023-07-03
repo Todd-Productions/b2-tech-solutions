@@ -1,5 +1,8 @@
 # Atoms
-- [ ] Adjust ImageCard to have props for excerpt and project link
+- [-] ImageCard
+  - [x] Adjust ImageCard to have props for excerpt and project link
+  - [-] Added hover effects - text and circle arrow
+    - [ ] Fix hover on text
 - [-] Button
   - [ ] Button animation effect & arrow
   - [ ] Refactor button colors (maybe)

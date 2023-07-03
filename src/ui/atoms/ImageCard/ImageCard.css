@@ -8,3 +8,20 @@
   border-radius: 12px;
   object-fit: cover;
 }
+
+.image-card-img:hover + .show-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.show-text {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s, opacity 0.5s;
+  color: var(--tp-color-white);
+  font-weight: 900;
+  z-index: 100;
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding: 15px 25px;
+}
