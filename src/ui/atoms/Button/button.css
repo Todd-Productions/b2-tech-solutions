@@ -33,7 +33,7 @@
 .btn-black {
   border: 1px solid #fbfff526;
   border-radius: 12px;
-  background-color: var(--tp-color-grey-600);
+  background-color: var(--tp-color-black-600);
   color: var(--tp-color-white);
 }
 
