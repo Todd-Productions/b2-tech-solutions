@@ -1,44 +1,39 @@
-.btn-primary {
-  background: linear-gradient(90deg, #005422, transparent) #69ef5d;
-  color: var(--tp-color-white);
-  border: 3px solid var(--tp-color-blue-500);
-  border-radius: 12px;
-  transition: background-color 0.5s;
-}
-
-.btn-primary:hover,
-.btn-primary:focus {
-  text-decoration: none;
-  background-color: var(--tp-color-green-500);
-}
-
-.btn-primary[disabled]:hover {
-  background: var(--tp-color-white);
-}
-
-.btn-default {
+.btn-white {
+  background-color: var(--tp-color-white) !important;
   border: var(--tp-color-grey-600) 1px solid;
   border-radius: 12px;
   color: var(--tp-color-grey-600);
 }
 
-.btn-default:hover {
-  color: var(--tp-color-white);
-  border-color: var(--tp-color-white);
-  background-color: var(--tp-color-green-500);
-  transition-duration: 0.5s;
-  transition-property: background-color;
-}
-
 .btn-black {
   border: 1px solid #fbfff526;
   border-radius: 12px;
-  background-color: var(--tp-color-black-600);
+  background-color: var(--tp-color-black-600) !important;
   color: var(--tp-color-white);
 }
 
 .btn-black:after {
   content: ".";
+}
+
+.btn-green {
+  color: var(--tp-color-white);
+  border: 3px solid var(--tp-color-blue-500);
+  border-radius: 12px;
+  background: linear-gradient(
+    224deg,
+    #92c83e 0%,
+    #8ec63e 15.48%,
+    #83c13f 27.21%,
+    #70b941 37.69%,
+    #52b044 47.45%,
+    #0ca546 56.72%,
+    #009948 65.49%,
+    #009549 68.73%,
+    #008742 76.29%,
+    #00632d 92.5%,
+    #005221 100%
+  ) !important;
 }
 
 .btn-lg {

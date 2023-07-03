@@ -3,7 +3,7 @@ import cns from "classnames"
 
 import "./button.css"
 
-export type ButtonColors = "primary" | "black" | "default"
+export type ButtonColors = "white" | "black" | "green"
 
 export interface ButtonProps {
   type?: "submit" | "button"
@@ -17,7 +17,7 @@ const Button: React.FC<ButtonProps> = (props) => {
 
   return (
     <button
-      type={type}
+      type={type === "submit" ? "submit" : "button"}
       className={cns(
         "border-0 bg-transparent transition-all text-base md:text-base text-sm px-12 py-3 text-center duration-300 lowercase leading-6 no-underline disabled:opacity-50 disabled:cursor-default hover:cursor-pointer hover:no-underline",
         {
@@ -33,7 +33,7 @@ const Button: React.FC<ButtonProps> = (props) => {
 
 Button.defaultProps = {
   type: "button",
-  color: "black",
+  color: "white",
 }
 
 export default Button
