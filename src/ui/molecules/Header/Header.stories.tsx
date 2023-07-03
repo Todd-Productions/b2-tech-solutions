@@ -16,7 +16,7 @@ type Story = StoryObj<typeof Header>
 export const Default: Story = {
   args: {
     ...Header.defaultProps,
-    navLinks,
+    links: navLinks,
     hireLink: "/",
   },
 }

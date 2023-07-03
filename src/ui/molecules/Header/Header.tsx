@@ -9,12 +9,12 @@ import Nav from "../Nav/Nav"
 import "./header.css"
 
 export interface HeaderProps extends ISocialLinks {
-  navLinks: INavLink[]
+  links: INavLink[]
   hireLink: UrlType
 }
 
 const Header: React.FC<HeaderProps> = (props) => {
-  const { navLinks, hireLink } = props
+  const { links, hireLink } = props
 
   return (
     <header className="header">
@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = (props) => {
           </Link>
         </div>
         <div>
-          <Nav links={navLinks} />
+          <Nav links={links} />
         </div>
         <div className="hidden sm:block header-item">
           <Link href={hireLink}>
