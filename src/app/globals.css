@@ -8,8 +8,9 @@
 :root {
   --tp-color-white: #fff;
   --tp-color-black: #000;
+  --tp-color-black-600: #1e1e1e;
   --tp-color-grey-500: #949599;
-  --tp-color-grey-600: #021e0e;
+  --tp-color-grey-600: #949599;
   --tp-color-green-400: #69ef5d;
   --tp-color-green-500: #33ba06;
   --tp-color-green-600: #005422;

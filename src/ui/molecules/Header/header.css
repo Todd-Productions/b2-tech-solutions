@@ -1,0 +1,13 @@
+.header {
+  max-width: 600px;
+  position: sticky;
+  margin: 0 auto;
+  padding: 8px 8px 8px 24px;
+  background-color: var(--tp-color-black-600);
+  border-radius: 16px;
+  box-shadow: 10px 10px 10px 0px rgba(30, 30, 30, 0.1);
+}
+
+.header-item {
+  text-align: text-center;
+}
