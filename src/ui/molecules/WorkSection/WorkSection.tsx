@@ -30,7 +30,7 @@ const WorkSection: React.FC<WorkProps> = (props) => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center gap-8 flex-wrap">
+        <div className="flex justify-center lg:justify-between items-center flex-wrap gap-y-8">
           {cards.map((card) => (
             <div className="justify-self-center w-4/5 h-60 lg:w-auto lg:h-auto">
               <ImageCard card={card} />
