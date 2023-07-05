@@ -1,7 +1,8 @@
 # Atoms
 - [-] Button
-  - [ ] Button animation effect & arrow
+  - [x] Button animation effect & arrow
   - [ ] Refactor button colors (maybe)
+  - [ ] Add hover effect to arrow
 
   # Molecules
 - [-] JobContentArea
