@@ -6,7 +6,8 @@
   # Molecules
 - [-] JobContentArea
   - [ ] Possibly refactor ImageCard with optional prop for except (will replace JobImageCard)
-- [ ] Create Work Gallery Section
+- [-] Create Work Gallery Section
+  - [ ] Fix mobile styles for ImageCard
 - [ ] Create Lets Connect Section
  - [ ] Title, Description, Images[]
 

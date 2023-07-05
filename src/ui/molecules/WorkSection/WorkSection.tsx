@@ -17,7 +17,7 @@ const WorkSection: React.FC<WorkProps> = (props) => {
   return (
     <Section>
       <Wrapper>
-        <div className="grid md:grid-cols-2 py-12 bg-black-500">
+        <div className="grid md:grid-cols-2 py-12">
           <SectionHeading>{header}</SectionHeading>
           <div className="flex items-start pt-6">
             <Image
@@ -30,9 +30,9 @@ const WorkSection: React.FC<WorkProps> = (props) => {
           </div>
         </div>
 
-        <div className="bg-yellow-500 flex justify-center items-center gap-8 flex-wrap">
+        <div className="flex justify-center items-center gap-8 flex-wrap">
           {cards.map((card) => (
-            <div className="justify-self-center">
+            <div className="justify-self-center w-4/5 h-60 lg:w-auto lg:h-auto">
               <ImageCard card={card} />
             </div>
           ))}
