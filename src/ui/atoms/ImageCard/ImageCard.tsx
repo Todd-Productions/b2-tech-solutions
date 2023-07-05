@@ -2,7 +2,9 @@ import React from "react"
 import Image from "next/image"
 import Link from "next/link"
 
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import { UrlType } from "../../../types"
+import Icon from "../Icon/Icon"
 import "./ImageCard.css"
 
 export interface ImageCardProps {
@@ -23,6 +25,9 @@ const ImageCard: React.FC<ImageCardProps> = (props) => {
           fill
         />
         <div className="show-text">{excerpt}</div>
+        <div className="image-card-icon show-icon">
+          <Icon icon={faArrowRight} />
+        </div>
       </Link>
     </div>
   )
