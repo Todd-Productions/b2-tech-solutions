@@ -16,5 +16,6 @@ export const Default: Story = {
   args: {
     ...Hero.defaultProps,
     img: "https://source.unsplash.com/random",
+    children: <div>b2 tech solutions</div>,
   },
 }
