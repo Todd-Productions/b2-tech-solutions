@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = (props) => {
 
   return (
     <header className="header">
-      <div className="header-grid grid content-center items-center grid-cols-[1fr_2fr] sm:grid-cols-[75px_1fr_150px]">
+      <div className="header-grid grid content-center items-center grid-cols-[1fr_2fr] sm:grid-cols-[75px_1fr_175px]">
         <div className="header-item">
           <Link href="/" title="B2 Tech Solutions" className="inline-block">
             <Image
