@@ -4,7 +4,7 @@ import Image from "next/image"
 import { Section, Wrapper, SectionHeading, ImageCard } from "../../atoms"
 
 // @types
-import { IImageCard } from "../../atoms/ImageCard/ImageCard"
+import { IImageCard } from "../../../types"
 
 export interface WorkProps {
   header?: string

@@ -1,0 +1,22 @@
+.connect-container > h2 {
+  font-size: 200px;
+}
+
+.green-heading {
+  background-image: linear-gradient(
+    to bottom,
+    #92c83e 0%,
+    #8ec63e 15.48%,
+    #83c13f 27.21%,
+    #70b941 37.69%,
+    #52b044 47.45%,
+    #0ca546 56.72%,
+    #009948 65.49%,
+    #009549 68.73%,
+    #008742 76.29%,
+    #00632d 92.5%,
+    #005221 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

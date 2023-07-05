@@ -14,3 +14,10 @@ export interface ISocialLinks {
   instagram?: string
   twitter?: string
 }
+
+// ImageCard - Used on home page
+export interface IImageCard {
+  img: UrlType
+  excerpt: string
+  projectLink: UrlType
+}

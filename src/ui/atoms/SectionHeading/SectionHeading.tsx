@@ -1,9 +1,9 @@
-import React from "react"
+import React, { ReactNode } from "react"
 
 import "./heading.css"
 
 export interface SectionHeadingProps {
-  children?: string
+  children?: ReactNode
 }
 
 const SectionHeading: React.FC<SectionHeadingProps> = (props) => {

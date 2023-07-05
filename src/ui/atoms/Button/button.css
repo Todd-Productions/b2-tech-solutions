@@ -1,8 +1,8 @@
 .btn-white {
   background-color: var(--tp-color-white) !important;
-  border: var(--tp-color-grey-600) 1px solid;
+  border: var(--tp-color-black-500) 1px solid;
   border-radius: 12px;
-  color: var(--tp-color-grey-600);
+  color: var(--tp-color-black-500);
 }
 
 .btn-black {

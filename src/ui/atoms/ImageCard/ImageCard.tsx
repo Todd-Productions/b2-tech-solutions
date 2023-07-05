@@ -3,15 +3,9 @@ import Image from "next/image"
 import Link from "next/link"
 
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
-import { UrlType } from "../../../types"
+import { IImageCard } from "../../../types"
 import Icon from "../Icon/Icon"
 import "./ImageCard.css"
-
-export interface IImageCard {
-  img: UrlType
-  excerpt: string
-  projectLink: UrlType
-}
 
 export interface ImageCardProps {
   card: IImageCard

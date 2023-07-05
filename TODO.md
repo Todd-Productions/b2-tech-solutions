@@ -6,11 +6,10 @@
   # Molecules
 - [-] JobContentArea
   - [ ] Possibly refactor ImageCard with optional prop for except (will replace JobImageCard)
-- [-] Create Work Gallery Section
-  - [ ] Fix mobile styles for ImageCard
-- [ ] Create Lets Connect Section
- - [ ] Title, Description, Images[]
-
+- [x] Create Work Gallery Section
+- [x] Create Lets Connect Section
+- [ ] Create HomeBanner
+ - [ ] Props: title/header
 
   # Organisms
 - [ ] Create home overlay organism (logo and start now btn)
