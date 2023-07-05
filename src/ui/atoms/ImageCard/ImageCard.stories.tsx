@@ -15,8 +15,10 @@ export const Default: Story = {
   render: (args: any) => <ImageCard {...args} />,
   args: {
     ...ImageCard.defaultProps,
-    img: "https://source.unsplash.com/random",
-    excerpt: "upgrade of sap idm migration and from v7.1 to v8.0",
-    projectLink: "/",
+    card: {
+      img: "https://source.unsplash.com/random",
+      excerpt: "upgrade of sap idm migration and from v7.1 to v8.0",
+      projectLink: "/",
+    },
   },
 }

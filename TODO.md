@@ -1,9 +1,4 @@
 # Atoms
-- [-] ImageCard
-  - [x] Adjust ImageCard to have props for excerpt and project link
-  - [x] Added hover effects - text and circle arrow
-    - [x] Fix hover on text
-  - [ ] Should the entire card be clickable or just the arrow and title?
 - [-] Button
   - [ ] Button animation effect & arrow
   - [ ] Refactor button colors (maybe)
@@ -24,3 +19,4 @@
 
 # Misc.
 - [ ] Adjust app font to font-family: Neue Montreal;
+- [ ] Should the entire ImageCard be clickable or just the arrow btn and title?

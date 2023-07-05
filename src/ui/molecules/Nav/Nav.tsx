@@ -15,7 +15,6 @@ export interface NavProps {
 const Nav: React.FC<NavProps> = (props) => {
   const { links } = props
   const pathname = usePathname()
-  console.log("here", pathname)
 
   return (
     <nav className="flex justify-center items-center rounded">

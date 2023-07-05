@@ -7,24 +7,28 @@ import { UrlType } from "../../../types"
 import Icon from "../Icon/Icon"
 import "./ImageCard.css"
 
-export interface ImageCardProps {
+export interface IImageCard {
   img: UrlType
   excerpt: string
   projectLink: UrlType
 }
 
+export interface ImageCardProps {
+  card: IImageCard
+}
+
 const ImageCard: React.FC<ImageCardProps> = (props) => {
-  const { img, excerpt, projectLink } = props
+  const { card } = props
   return (
     <div className="image-card">
-      <Link href={projectLink}>
+      <Link href={card.projectLink}>
         <Image
           className="image-card-img"
-          src={img as string}
+          src={card.img as string}
           alt="project"
           fill
         />
-        <div className="show-text">{excerpt}</div>
+        <div className="show-text">{card.excerpt}</div>
         <div className="image-card-icon show-icon">
           <Icon icon={faArrowRight} />
         </div>
