@@ -17,9 +17,7 @@ module.exports = {
           600: "#1E1E1E",
         },
       },
-      fontFamily: {
-
-      },
+      fontFamily: {},
     },
   },
   screens: {

@@ -4,8 +4,12 @@
   - [ ] Add hover effect to arrow
 
 # Molecules
+- [-] Create AboutSection
 
 # Organisms
+- [ ] Create ExperienceSection
+  - [ ] Included: JobInfoArea, JobImageCard, Sidebar/sidenav of dates w/ scroll to top btn (need to make)
+
 
 # Templates
 - [ ] Create AboutTemplate
@@ -15,8 +19,9 @@
 
 # Misc.
 - [-] Adjust app font to font-family: Neue Montreal;
-  - [ ] Currently using what is available on google
+  - [ ] Currently using what is available on google, replace with actual font-family?
 - [ ] Should the entire ImageCard be clickable or just the arrow btn and title?
+- [ ] Fonts not taking effect in SB
 
 # Page
 - [x] Add HomeTemplate to page
