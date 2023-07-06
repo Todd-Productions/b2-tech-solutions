@@ -1,0 +1,14 @@
+@import "tailwindcss/base";
+
+@layer base {
+  .content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @screen md {
+    .content {
+      width: 100%;
+    }
+  }
+}

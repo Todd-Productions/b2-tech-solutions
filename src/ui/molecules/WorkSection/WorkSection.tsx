@@ -3,6 +3,7 @@ import React from "react"
 import Image from "next/image"
 import { Section, Wrapper, SectionHeading, ImageCard } from "../../atoms"
 
+import "./worksection.css"
 // @types
 import { IImageCard } from "../../../types"
 
@@ -17,9 +18,9 @@ const WorkSection: React.FC<WorkProps> = (props) => {
   return (
     <Section>
       <Wrapper>
-        <div className="grid md:grid-cols-2 py-12">
+        <div className="content grid xl:grid-cols-2 py-12 gap-x-8">
           <SectionHeading>{header}</SectionHeading>
-          <div className="flex items-start pt-6">
+          <div className="flex items-start md:pt-20 text-xl md:text-3xl text-black-500">
             <Image
               src="/images/blockquote.svg"
               height={50}

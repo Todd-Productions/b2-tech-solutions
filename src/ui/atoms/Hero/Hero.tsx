@@ -18,4 +18,13 @@ const Hero: React.FC<HeroProps> = (props) => {
   )
 }
 
+Hero.defaultProps = {
+  children: (
+    <>
+      <div>b2 tech</div>
+      <div>solutions</div>
+    </>
+  ),
+}
+
 export default Hero

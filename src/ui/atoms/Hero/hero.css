@@ -1,12 +1,5 @@
 @import "tailwindcss/base";
 
-.hero {
-  height: fit-content;
-  width: 100%;
-  position: relative;
-  padding: 15rem 0 1rem 1rem;
-}
-
 .hero-img {
   object-fit: cover;
   object-position: center center;
@@ -25,6 +18,15 @@
     padding: 0;
     margin: 0;
   }
+
+  .hero {
+    min-height: 650px;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    padding: 15rem 0 1rem 1rem;
+  }
+
   @screen md {
     .hero-content {
       font-size: 120px;
@@ -32,10 +34,10 @@
     }
   }
 
-  @screen lg {
+  @screen xl {
     .hero-content {
-      font-size: 160px;
-      line-height: 140px;
+      line-height: 180px;
+      font-size: 200px;
     }
   }
 }

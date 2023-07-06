@@ -30,13 +30,12 @@ const HomeTemplate: React.FC<HomeProps> = (props) => {
     hireMeLink,
     jobCards,
     bannerImg,
-    title,
     workDescription,
     connectDescription,
   } = props
   return (
     <MainLayout {...getMainLayoutProps(props)}>
-      <Hero img={bannerImg as string}>{title}</Hero>
+      <Hero img={bannerImg as string} />
       <WorkSection description={workDescription} cards={jobCards} />
       <ConnectSection description={connectDescription} hireLink={hireMeLink} />
     </MainLayout>

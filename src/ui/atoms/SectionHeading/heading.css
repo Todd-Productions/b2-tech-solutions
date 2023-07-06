@@ -1,4 +1,15 @@
 .section-heading {
-  /* size from figma */
-  font-size: 320px;
+  font-size: 5rem;
+}
+
+@screen lg {
+  .section-heading {
+    font-size: 115px;
+  }
+}
+
+@screen xl {
+  .section-heading {
+    font-size: 215px;
+  }
 }

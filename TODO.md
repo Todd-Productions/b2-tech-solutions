@@ -3,9 +3,9 @@
   - [ ] Refactor button colors (maybe)
   - [ ] Add hover effect to arrow
 
-  # Molecules
+# Molecules
 
-  # Organisms
+# Organisms
 
 # Templates
 - [ ] Home - Minor style touch ups
