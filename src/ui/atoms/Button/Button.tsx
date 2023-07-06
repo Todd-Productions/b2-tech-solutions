@@ -13,13 +13,15 @@ export interface ButtonProps {
   color?: ButtonColors
   children?: string
   fullWidth?: boolean
+  onClick?: () => void
 }
 
 const Button: React.FC<ButtonProps> = (props) => {
-  const { type, children, fullWidth, color } = props
+  const { type, children, fullWidth, color, onClick } = props
 
   return (
     <button
+      onClick={onClick}
       data-over="over here up"
       type={type === "submit" ? "submit" : "button"}
       className={cns(

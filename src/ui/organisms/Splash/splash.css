@@ -1,0 +1,32 @@
+.splash {
+  background: linear-gradient(
+    224deg,
+    #92c83e 0%,
+    #8ec63e 15.48%,
+    #83c13f 27.21%,
+    #70b941 37.69%,
+    #52b044 47.45%,
+    #0ca546 56.72%,
+    #009948 65.49%,
+    #009549 68.73%,
+    #008742 76.29%,
+    #00632d 92.5%,
+    #005221 100%
+  );
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-container {
+  position: absolute;
+  bottom: 150px;
+}

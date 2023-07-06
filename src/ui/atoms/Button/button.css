@@ -17,10 +17,6 @@
   color: var(--tp-color-white);
 }
 
-.btn-black:after {
-  content: ".";
-}
-
 .btn-green {
   color: var(--tp-color-white);
   border: 3px solid var(--tp-color-blue-500);
