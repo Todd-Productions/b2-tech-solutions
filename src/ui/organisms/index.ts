@@ -1,2 +1,2 @@
 export { default as MainLayout } from "./MainLayout/MainLayout"
-export const foo = "foo"
+export { default as Splash } from "./Splash/Splash"

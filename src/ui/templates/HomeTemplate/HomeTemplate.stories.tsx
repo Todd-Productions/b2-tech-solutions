@@ -44,5 +44,9 @@ export const Default: Story = {
     title: "b2 tech solutions",
     workDescription:
       "Explore our transformative consulting projects in SAP IDM, led by Brandon, an experienced SAP IDM professional and MSCE-certified expert.",
+    connectDescription: [
+      "Experienced SAP IDM professional and MSCE-certified expert.",
+      "Drive your IDM projects to success with my technical expertise.",
+    ],
   },
 }

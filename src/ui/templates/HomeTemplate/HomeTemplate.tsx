@@ -14,7 +14,6 @@ export interface DefaultProps {
 
 export interface HomeProps extends DefaultProps {
   bannerImg: UrlType
-  bannerTitle: string
   workDescription: string
   jobCards: IImageCard[]
   connectDescription: string[]
