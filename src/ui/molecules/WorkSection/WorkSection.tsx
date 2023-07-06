@@ -1,8 +1,7 @@
 import React from "react"
-
 import Image from "next/image"
-import { Section, Wrapper, SectionHeading, ImageCard } from "../../atoms"
 
+import { Section, Wrapper, SectionHeading, ImageCard } from "../../atoms"
 import "./worksection.css"
 // @types
 import { IImageCard } from "../../../types"

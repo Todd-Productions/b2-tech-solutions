@@ -8,7 +8,8 @@
 # Organisms
 
 # Templates
-- [ ] Home - Minor style touch ups
+- [-] Home - Minor style touch ups
+  - [ ] fix work section title and description overlap (need to change font)
 
 # Misc.
 - [ ] Adjust app font to font-family: Neue Montreal;

@@ -1,5 +1,13 @@
-.connect-container > h2 {
-  font-size: 200px;
+@screen md {
+  .connect-container > h2 {
+    font-size: 125px;
+  }
+}
+
+@screen lg {
+  .connect-container > h2 {
+    font-size: 200px;
+  }
 }
 
 .green-heading {
