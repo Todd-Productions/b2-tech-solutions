@@ -35,6 +35,10 @@
   }
 
   @screen xl {
+    .hero {
+      min-height: 850px;
+    }
+
     .hero-content {
       line-height: 180px;
       font-size: 200px;

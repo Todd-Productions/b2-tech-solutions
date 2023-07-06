@@ -1,12 +1,24 @@
+import React from "react"
 import "./globals.css"
-import { Barlow_Condensed } from "next/font/google"
+// eslint-disable-next-line camelcase
+import { Bebas_Neue, Roboto } from "next/font/google"
 import type { Metadata } from "next"
 
-//  heading should be - font-family: Formula Condensed;
-const barlow = Barlow_Condensed({
-  weight: ["400", "500"],
-  variable: "--font-sans",
+//  Figma - font-family: Formula Condensed;
+// eslint-disable-next-line camelcase
+const bebas_neue = Bebas_Neue({
+  weight: "400",
   subsets: ["latin"],
+  variable: "--font-bebas-neue",
+  display: "swap",
+})
+
+// Figma - font-family: Neue Montreal;
+const roboto = Roboto({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-roboto",
+  display: "swap",
 })
 
 export const metadata: Metadata = {
@@ -21,8 +33,9 @@ interface RootLayoutProps {
 const RootLayout: React.FC<RootLayoutProps> = (props) => {
   const { children } = props
   return (
-    <html lang="en">
-      <body className={barlow.variable}>{children}</body>
+    // eslint-disable-next-line camelcase
+    <html lang="en" className={`${bebas_neue.variable} ${roboto.variable}`}>
+      <body>{children}</body>
     </html>
   )
 }

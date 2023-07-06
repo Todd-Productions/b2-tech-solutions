@@ -8,11 +8,14 @@
 # Organisms
 
 # Templates
-- [-] Home - Minor style touch ups
-  - [ ] fix work section title and description overlap (need to change font)
+- [ ] Create AboutTemplate
+- [x] Home - Minor style touch ups
+  - [ ] Home - Review
+
 
 # Misc.
-- [ ] Adjust app font to font-family: Neue Montreal;
+- [-] Adjust app font to font-family: Neue Montreal;
+  - [ ] Currently using what is available on google
 - [ ] Should the entire ImageCard be clickable or just the arrow btn and title?
 
 # Page

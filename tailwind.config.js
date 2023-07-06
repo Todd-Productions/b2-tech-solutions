@@ -18,8 +18,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Neue Montreal", "sans-serif"],
-        heading: ["var(--font-heading)", "sans-serif"],
+
       },
     },
   },
