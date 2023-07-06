@@ -40,5 +40,9 @@ export const Default: Story = {
         projectLink: "/",
       },
     ],
+    bannerImg: "https://source.unsplash.com/random",
+    title: "b2 tech solutions",
+    workDescription:
+      "Explore our transformative consulting projects in SAP IDM, led by Brandon, an experienced SAP IDM professional and MSCE-certified expert.",
   },
 }
