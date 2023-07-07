@@ -14,7 +14,6 @@ type Story = StoryObj<typeof SectionHeading>
 export const Default: Story = {
   render: (args) => <SectionHeading {...args} />,
   args: {
-    ...SectionHeading.defaultProps,
     children: "work",
   },
 }

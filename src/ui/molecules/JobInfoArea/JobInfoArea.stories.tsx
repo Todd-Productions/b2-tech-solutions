@@ -13,7 +13,6 @@ type Story = StoryObj<typeof JobInfoArea>
 
 export const Default: Story = {
   args: {
-    ...JobInfoArea.defaultProps,
     job: {
       title: "Senior Consultant",
       timeline: "Aug 2017 - Mar 2019",

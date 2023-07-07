@@ -14,7 +14,6 @@ type Story = StoryObj<typeof MainLayout>
 
 export const Default: Story = {
   args: {
-    ...MainLayout.defaultProps,
     navLinks,
     footerLinks,
     hireLink: contactLink,

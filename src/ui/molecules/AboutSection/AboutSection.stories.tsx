@@ -13,7 +13,6 @@ type Story = StoryObj<typeof AboutSection>
 
 export const Default: Story = {
   args: {
-    ...AboutSection.defaultProps,
     img: "https://source.unsplash.com/random",
     description:
       "An experienced SAP IDM professional and MSCE-certified expert. Develops IDM solutions (v7.1 to v8.0). Available for new projects or long-term positions, offering technical expertise to optimize your environment.",

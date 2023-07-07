@@ -13,7 +13,6 @@ type Story = StoryObj<typeof ExperienceSection>
 
 export const Default: Story = {
   args: {
-    ...ExperienceSection.defaultProps,
     jobs: [
       {
         title: "Senior Consultant",

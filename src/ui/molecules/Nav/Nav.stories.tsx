@@ -14,7 +14,6 @@ type Story = StoryObj<typeof Nav>
 
 export const Default: Story = {
   args: {
-    ...Nav.defaultProps,
     links: navLinks,
   },
 }

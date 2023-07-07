@@ -13,7 +13,7 @@ export interface WorkProps {
 }
 
 const WorkSection: React.FC<WorkProps> = (props) => {
-  const { header, description, cards } = props
+  const { header, description, cards } = { header: "work.", ...props }
   return (
     <Section>
       <Wrapper>
@@ -40,10 +40,6 @@ const WorkSection: React.FC<WorkProps> = (props) => {
       </Wrapper>
     </Section>
   )
-}
-
-WorkSection.defaultProps = {
-  header: "work.",
 }
 
 export default WorkSection

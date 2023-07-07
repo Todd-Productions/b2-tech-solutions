@@ -17,7 +17,11 @@ export interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = (props) => {
-  const { type, children, fullWidth, color, onClick } = props
+  const { type, children, fullWidth, color, onClick } = {
+    type: "button",
+    color: "green",
+    ...props,
+  }
 
   return (
     <button
@@ -40,11 +44,6 @@ const Button: React.FC<ButtonProps> = (props) => {
       </div>
     </button>
   )
-}
-
-Button.defaultProps = {
-  type: "button",
-  color: "white",
 }
 
 export default Button

@@ -13,7 +13,6 @@ type Story = StoryObj<typeof WorkSection>
 
 export const Default: Story = {
   args: {
-    ...WorkSection.defaultProps,
     description:
       "Explore our transformative consulting projects in SAP IDM, led by Brandon, an experienced SAP IDM professional and MSCE-certified expert.",
     cards: [

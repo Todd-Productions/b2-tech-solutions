@@ -14,7 +14,6 @@ type Story = StoryObj<typeof Hero>
 export const Default: Story = {
   render: (args: any) => <Hero {...args} />,
   args: {
-    ...Hero.defaultProps,
     img: "https://source.unsplash.com/random",
     children: <div>b2 tech solutions</div>,
   },

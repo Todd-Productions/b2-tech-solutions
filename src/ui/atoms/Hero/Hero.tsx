@@ -9,22 +9,21 @@ export interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = (props) => {
-  const { img, children } = props
+  const { img, children } = {
+    children: (
+      <>
+        <div>b2 tech</div>
+        <div>solutions</div>
+      </>
+    ),
+    ...props,
+  }
   return (
     <div className="hero">
       <Image className="hero-img" src={img as string} alt="hero" fill />
       <div className="hero-content">{children}</div>
     </div>
   )
-}
-
-Hero.defaultProps = {
-  children: (
-    <>
-      <div>b2 tech</div>
-      <div>solutions</div>
-    </>
-  ),
 }
 
 export default Hero

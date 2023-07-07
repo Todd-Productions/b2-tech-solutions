@@ -13,7 +13,7 @@ export interface ConnectProps {
 }
 
 const ConnectSection: React.FC<ConnectProps> = (props) => {
-  const { title, description, hireLink } = props
+  const { title, description, hireLink } = { title: "let's connect", ...props }
   return (
     <Section>
       <div className="connect-container text-center">
@@ -31,10 +31,6 @@ const ConnectSection: React.FC<ConnectProps> = (props) => {
       </div>
     </Section>
   )
-}
-
-ConnectSection.defaultProps = {
-  title: "let's connect",
 }
 
 export default ConnectSection

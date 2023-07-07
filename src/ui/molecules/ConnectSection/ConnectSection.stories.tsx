@@ -14,7 +14,6 @@ type Story = StoryObj<typeof ConnectSection>
 
 export const Default: Story = {
   args: {
-    ...ConnectSection.defaultProps,
     description: [
       "Experienced SAP IDM professional and MSCE-certified expert.",
       "Drive your IDM projects to success with my technical expertise.",

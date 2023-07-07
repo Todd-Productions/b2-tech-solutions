@@ -14,7 +14,6 @@ type Story = StoryObj<typeof HomeTemplate>
 
 export const Default: Story = {
   args: {
-    ...HomeTemplate.defaultProps,
     navLinks,
     footerLinks,
     hireMeLink: contactLink,

@@ -14,7 +14,6 @@ type Story = StoryObj<typeof Footer>
 
 export const Default: Story = {
   args: {
-    ...Footer.defaultProps,
     links: footerLinks,
   },
 }

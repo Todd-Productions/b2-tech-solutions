@@ -13,7 +13,7 @@ type Story = StoryObj<typeof Button>
 
 export const Default: Story = {
   args: {
-    ...Button.defaultProps,
+    // ...Button.,
     children: "I'm A Button",
   },
 }
