@@ -37,7 +37,7 @@ const ExperienceSidebar: React.FC<ExperienceProps> = (props) => {
         onKeyDown={handleKeyDown}
         role="button"
         tabIndex={0}
-        className="p-6 h-20 w-20 text-center flex justify-center items-center rounded-full bg-green-600 text-white mt-24"
+        className="p-6 h-20 w-20 text-center flex justify-center items-center rounded-full bg-green-600 text-white mt-40"
       >
         <Icon icon={faArrowUp} />
       </div>

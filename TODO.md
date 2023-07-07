@@ -10,9 +10,8 @@
 - [ ] Hover effect on bottom arrow link for ImageCard
 
 # Organisms
-- [-] Create ExperienceSection
-  - [x] Included: JobInfoArea
-  - [x] Sidebar/sidenav of dates w/ scroll to top btn
+- [x] Create ExperienceSection
+  - [ ] Review
 
 
 # Templates
