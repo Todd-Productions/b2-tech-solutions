@@ -15,14 +15,9 @@
 # Organisms
 
 # Templates
-- [x] Create AboutTemplate
-- [x] Home - Minor style touch ups
-  - [ ] Home - Review
 
-# Page
-- [x] Add HomeTemplate to page
-- [x] Add AboutTemplate to page
-- [ ] Add ContactTemplate
+# Pages
+
 
 # Misc.
 - [-] Adjust app font to font-family: Neue Montreal, Condensed Formula (large text);

@@ -1,8 +1,10 @@
 import React from "react"
 import Image from "next/image"
+import slugify from "slugify"
 
 import { Section, Wrapper, SectionHeading, ImageCard } from "../../atoms"
 import "./worksection.css"
+
 // @types
 import { IImageCard } from "../../../types"
 
@@ -32,7 +34,10 @@ const WorkSection: React.FC<WorkProps> = (props) => {
 
         <div className="flex justify-center lg:justify-between items-center flex-wrap gap-y-8">
           {cards.map((card) => (
-            <div className="justify-self-center w-4/5 h-60 lg:w-auto lg:h-auto">
+            <div
+              className="justify-self-center w-4/5 h-60 lg:w-auto lg:h-auto"
+              key={slugify(card.excerpt)}
+            >
               <ImageCard card={card} />
             </div>
           ))}

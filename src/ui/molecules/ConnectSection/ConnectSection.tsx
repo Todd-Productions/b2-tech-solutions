@@ -1,5 +1,6 @@
 import React from "react"
 import Link from "next/link"
+import slugify from "slugify"
 
 import { Section, SectionHeading, Button } from "../../atoms"
 
@@ -22,7 +23,9 @@ const ConnectSection: React.FC<ConnectProps> = (props) => {
         </SectionHeading>
         <div className="my-6 md:my-10">
           {description.map((line) => (
-            <p className="font-bold py-1">{line}</p>
+            <p className="font-bold py-1" key={slugify(line)}>
+              {line}
+            </p>
           ))}
         </div>
         <Link href={hireLink.url}>
