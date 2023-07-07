@@ -12,7 +12,7 @@
 # Organisms
 - [-] Create ExperienceSection
   - [x] Included: JobInfoArea
-  - [ ] Sidebar/sidenav of dates w/ scroll to top btn (need to make)
+  - [x] Sidebar/sidenav of dates w/ scroll to top btn
 
 
 # Templates
