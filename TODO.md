@@ -5,6 +5,8 @@
 
 # Molecules
 - [-] Create AboutSection
+  - [ ] AboutSection author bg cards
+- [ ] Hover effect on navlinks
 
 # Organisms
 - [ ] Create ExperienceSection

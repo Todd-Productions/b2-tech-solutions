@@ -1,3 +1,18 @@
-.about-img {
-  min-height: 150px;
+.img-container {
+  min-height: 350px;
+}
+
+@screen md {
+  .img-container {
+    min-height: 700px;
+    background: var(--tp-color-green-300);
+  }
+}
+
+.dark-card {
+  background: var(--tp-color-green-600);
+}
+
+.light-card {
+  background: var(--tp-color-green-300);
 }
