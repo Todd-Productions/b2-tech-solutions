@@ -6,10 +6,9 @@ import { MainLayout } from "../../organisms"
 import { INavLink, UrlType, IImageCard } from "../../../types"
 
 export interface DefaultProps {
-  title: string
   navLinks: INavLink[]
   footerLinks: INavLink[]
-  hireMeLink: UrlType
+  hireMeLink: INavLink
 }
 
 export interface HomeProps extends DefaultProps {

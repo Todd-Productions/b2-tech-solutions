@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
 import AboutTemplate from "./AboutTemplate"
-import { navLinks, footerLinks } from "../../../data/siteMeta"
+import { navLinks, footerLinks, contactLink } from "../../../data/siteMeta"
 
 const meta: Meta<typeof AboutTemplate> = {
   title: "ui/templates/AboutTemplate",
@@ -16,7 +16,7 @@ export const Default: Story = {
   args: {
     navLinks,
     footerLinks,
-    hireMeLink: "/",
+    hireMeLink: contactLink,
     aboutImg: "https://source.unsplash.com/random",
     aboutDescription:
       "An experienced SAP IDM professional and MSCE-certified expert. Develops IDM solutions (v7.1 to v8.0). Available for new projects or long-term positions, offering technical expertise to optimize your environment.",

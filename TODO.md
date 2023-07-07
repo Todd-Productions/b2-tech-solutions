@@ -21,7 +21,8 @@
 
 # Page
 - [x] Add HomeTemplate to page
-- [ ] Add AboutTemplate to page
+- [x] Add AboutTemplate to page
+- [ ] Add ContactTemplate
 
 # Misc.
 - [-] Adjust app font to font-family: Neue Montreal, Condensed Formula (large text);

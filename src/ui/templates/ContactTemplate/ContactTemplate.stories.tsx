@@ -16,7 +16,7 @@ export const Default: Story = {
   args: {
     navLinks,
     footerLinks,
-    hireMeLink: "/",
+    hireMeLink: { label: "Instagram", url: "/" },
     email: "email@email.com",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend aliquet felis, ac aliquet massa pulvinar quis. Quisque sem urna, facilisis vitae libero et, consequat suscipit nulla.",

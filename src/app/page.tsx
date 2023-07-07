@@ -5,7 +5,7 @@ import { setCookie, hasCookie } from "cookies-next"
 
 import { HomeTemplate } from "../ui/templates"
 import { Splash } from "../ui/organisms"
-import { navLinks, footerLinks } from "../data/siteMeta"
+import { navLinks, footerLinks, contactLink } from "../data/siteMeta"
 
 const HomePage = () => {
   const [userVisited, setUserVisited] = useState(false)
@@ -27,9 +27,8 @@ const HomePage = () => {
     <HomeTemplate
       navLinks={navLinks}
       footerLinks={footerLinks}
-      hireMeLink="/"
+      hireMeLink={contactLink}
       bannerImg="https://source.unsplash.com/random"
-      title="b2 tech solutions"
       workDescription="Explore our transformative consulting projects in SAP IDM, led by Brandon, an experienced SAP IDM professional and MSCE-certified expert."
       jobCards={[
         {

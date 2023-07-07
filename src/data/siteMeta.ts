@@ -29,3 +29,8 @@ export const footerLinks: INavLink[] = [
     url: "/",
   },
 ]
+
+export const contactLink: INavLink = {
+  label: "HIRE ME",
+  url: "/contact",
+}

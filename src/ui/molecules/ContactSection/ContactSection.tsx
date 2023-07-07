@@ -13,7 +13,7 @@ const ContactSection: React.FC<ContactProps> = (props) => {
   return (
     <Section>
       <Wrapper>
-        <div className="grid md:grid-cols-[2fr_1fr] items-center min-h-[75vh]">
+        <div className="grid md:grid-cols-[2fr_1fr] items-center min-h-[80vh]">
           <div>
             <div className="flex flex-col items-start justify-center mb-20">
               <h1 className="text-9xl">GET IN</h1>

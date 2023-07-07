@@ -2,7 +2,7 @@ import React from "react"
 import Image from "next/image"
 import Link from "next/link"
 
-import { INavLink, ISocialLinks, UrlType } from "@/types"
+import { INavLink, ISocialLinks } from "../../../types"
 
 import { Button } from "../../atoms"
 import Nav from "../Nav/Nav"
@@ -10,7 +10,7 @@ import "./header.css"
 
 export interface HeaderProps extends ISocialLinks {
   links: INavLink[]
-  hireLink: UrlType
+  hireLink: INavLink
 }
 
 const Header: React.FC<HeaderProps> = (props) => {
@@ -34,8 +34,8 @@ const Header: React.FC<HeaderProps> = (props) => {
           <Nav links={links} />
         </div>
         <div className="hidden sm:block header-item">
-          <Link href={hireLink}>
-            <Button color="green">HIRE ME</Button>
+          <Link href={hireLink.url}>
+            <Button color="green">{hireLink.label}</Button>
           </Link>
         </div>
       </div>

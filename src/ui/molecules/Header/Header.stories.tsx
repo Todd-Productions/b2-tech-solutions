@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
-import { navLinks } from "../../../data/siteMeta"
+import { navLinks, contactLink } from "../../../data/siteMeta"
 
 import Header from "./Header"
 
@@ -17,6 +17,6 @@ export const Default: Story = {
   args: {
     ...Header.defaultProps,
     links: navLinks,
-    hireLink: "/",
+    hireLink: contactLink,
   },
 }

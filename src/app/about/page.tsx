@@ -3,14 +3,13 @@
 import React from "react"
 
 import { AboutTemplate } from "../../ui/templates"
-import { navLinks, footerLinks } from "../../data/siteMeta"
+import { navLinks, footerLinks, contactLink } from "../../data/siteMeta"
 
 const AboutPage = () => (
   <AboutTemplate
-    title="testing"
     navLinks={navLinks}
     footerLinks={footerLinks}
-    hireMeLink="/"
+    hireMeLink={contactLink}
     aboutImg="https://source.unsplash.com/random"
     aboutDescription="An experienced SAP IDM professional and MSCE-certified expert. Develops IDM solutions (v7.1 to v8.0). Available for new projects or long-term positions, offering technical expertise to optimize your environment."
     connectDescription={[

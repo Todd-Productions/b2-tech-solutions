@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
 import MainLayout from "./MainLayout"
-import { navLinks, footerLinks } from "../../../data/siteMeta"
+import { navLinks, footerLinks, contactLink } from "../../../data/siteMeta"
 
 const meta: Meta<typeof MainLayout> = {
   title: "ui/organisms/MainLayout",
@@ -17,6 +17,6 @@ export const Default: Story = {
     ...MainLayout.defaultProps,
     navLinks,
     footerLinks,
-    hireLink: "/",
+    hireLink: contactLink,
   },
 }

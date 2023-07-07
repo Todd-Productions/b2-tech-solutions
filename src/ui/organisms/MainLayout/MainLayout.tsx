@@ -1,13 +1,13 @@
 import React, { ReactNode } from "react"
 
 import { Header, Footer } from "../../molecules"
-import { INavLink, UrlType } from "../../../types"
+import { INavLink } from "../../../types"
 
 export interface MainLayoutProps {
   children?: ReactNode
   navLinks: INavLink[]
   footerLinks: INavLink[]
-  hireLink: UrlType
+  hireLink: INavLink
 }
 
 const MainLayout: React.FC<MainLayoutProps> = (props: MainLayoutProps) => {

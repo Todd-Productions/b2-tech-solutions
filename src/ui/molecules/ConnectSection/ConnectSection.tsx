@@ -3,13 +3,13 @@ import Link from "next/link"
 
 import { Section, SectionHeading, Button } from "../../atoms"
 
-import { UrlType } from "../../../types"
+import { INavLink } from "../../../types"
 import "./connect.css"
 
 export interface ConnectProps {
   title?: string
   description: string[]
-  hireLink: UrlType
+  hireLink: INavLink
 }
 
 const ConnectSection: React.FC<ConnectProps> = (props) => {
@@ -25,8 +25,8 @@ const ConnectSection: React.FC<ConnectProps> = (props) => {
             <p className="font-bold py-1">{line}</p>
           ))}
         </div>
-        <Link href={hireLink}>
-          <Button>hire me</Button>
+        <Link href={hireLink.url}>
+          <Button>{hireLink.label}</Button>
         </Link>
       </div>
     </Section>
