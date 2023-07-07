@@ -22,7 +22,7 @@ const AboutSection: React.FC<AboutProps> = (props) => {
   return (
     <Section>
       <Wrapper>
-        <div className="text-center mb-12">
+        <div className="text-center mt-20 mb-12">
           <SectionHeading>about.</SectionHeading>
         </div>
         <div className="grid  md:grid-cols-2">

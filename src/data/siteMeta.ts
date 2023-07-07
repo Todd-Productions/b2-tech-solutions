@@ -7,7 +7,7 @@ export const navLinks: INavLink[] = [
   },
   {
     label: "Work",
-    url: "/work",
+    url: "/#work",
   },
   {
     label: "About",

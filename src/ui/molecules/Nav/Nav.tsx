@@ -2,11 +2,11 @@
 
 import React from "react"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
 import slugify from "slugify"
+import { usePathname } from "next/navigation"
 
 import "./nav.css"
-import { INavLink } from "@/types"
+import { INavLink } from "../../../types"
 
 export interface NavProps {
   links: INavLink[]

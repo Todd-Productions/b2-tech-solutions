@@ -1,2 +1,2 @@
 export { default as HomeTemplate } from "./HomeTemplate/HomeTemplate"
-export const foo = "foo"
+export { default as AboutTemplate } from "./AboutTemplate/AboutTemplate"

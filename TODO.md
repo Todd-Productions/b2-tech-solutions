@@ -6,7 +6,9 @@
 # Molecules
 - [-] Create AboutSection
   - [ ] AboutSection author bg cards
-- [ ] Hover effect on navlinks (maybe use button)
+- [-] Nav
+  - [ ] Hover effect on navlinks (maybe use button)
+  - [ ] handle routing to work -  home, then scroll to work section
 - [ ] Hover effect on bottom arrow link for ImageCard
 - [ ] Hover effect on scroll up btn for ExperienceSidebar
 
@@ -28,3 +30,4 @@
 - [ ] Fonts not taking effect in SB (works fine in dev)
 - [ ] ExperienceSidebar should be slide under the connect section in the about page
 - [ ] Add smooth transition when switching from splash to hometemplate? (check react transition group)
+  - [ ] With useState, users can briefly see splash (state set to false) even if already visited

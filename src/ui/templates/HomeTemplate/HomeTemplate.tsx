@@ -36,7 +36,9 @@ const HomeTemplate: React.FC<HomeProps> = (props) => {
   return (
     <MainLayout {...getMainLayoutProps(props)}>
       <Hero img={bannerImg as string} />
-      <WorkSection description={workDescription} cards={jobCards} />
+      <div id="work">
+        <WorkSection description={workDescription} cards={jobCards} />
+      </div>
       <ConnectSection description={connectDescription} hireLink={hireMeLink} />
     </MainLayout>
   )
