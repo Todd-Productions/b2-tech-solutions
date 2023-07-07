@@ -4,7 +4,7 @@ import slugify from "slugify"
 import { Section, SectionSubHeading, JobImageCard } from "../../atoms"
 import { UrlType } from "../../../types"
 
-export interface JobInfoProps {
+export interface IJobInfo {
   title: string
   timeline: string
   company: string
@@ -13,11 +13,17 @@ export interface JobInfoProps {
   excerpt: string
 }
 
+export interface JobInfoProps {
+  job: IJobInfo
+}
+
 const JobInfoArea: React.FC<JobInfoProps> = (props) => {
-  const { title, timeline, company, bulletPoints, img, excerpt } = props
+  const { job } = props
+  const { title, timeline, company, bulletPoints, img, excerpt } = job
+
   return (
     <Section>
-      <div className="grid grid-cols-[1fr_1fr] text-xl">
+      <div className="grid md:grid-cols-[1fr_1fr] text-xl">
         <div>
           <SectionSubHeading>{title}</SectionSubHeading>
           <p>{timeline}</p>

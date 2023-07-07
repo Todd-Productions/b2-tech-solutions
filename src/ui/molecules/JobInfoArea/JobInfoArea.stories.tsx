@@ -14,15 +14,17 @@ type Story = StoryObj<typeof JobInfoArea>
 export const Default: Story = {
   args: {
     ...JobInfoArea.defaultProps,
-    title: "Senior Consultant",
-    timeline: "Aug 2017 - Mar 2019",
-    company: "Invently NA, Inc.",
-    bulletPoints: [
-      "SAP ID Senior Developer Consultant",
-      "SAP Consulting firm, Global HQ - Nice, France, serving clients in Canada, France, Switzerland and beyond.",
-    ],
-    img: "https://source.unsplash.com/random",
-    excerpt:
-      "INVENTY NORTH AMERICA, INC., JERSEY CITY, NJ / MONTRÉAL, QUÉBEC, CANADA",
+    job: {
+      title: "Senior Consultant",
+      timeline: "Aug 2017 - Mar 2019",
+      company: "Invently NA, Inc.",
+      bulletPoints: [
+        "SAP ID Senior Developer Consultant",
+        "SAP Consulting firm, Global HQ - Nice, France, serving clients in Canada, France, Switzerland and beyond.",
+      ],
+      img: "https://source.unsplash.com/random",
+      excerpt:
+        "INVENTY NORTH AMERICA, INC., JERSEY CITY, NJ / MONTRÉAL, QUÉBEC, CANADA",
+    },
   },
 }

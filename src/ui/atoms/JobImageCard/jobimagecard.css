@@ -1,9 +1,14 @@
 .job-card {
-  max-width: 1200px;
+  width: 100%;
   max-height: 750px;
-  width: 900px;
-  height: 500px;
+  height: 350px;
   position: relative;
+}
+
+@screen md {
+  .job-card {
+    height: 700px;
+  }
 }
 
 .job-card-img {
