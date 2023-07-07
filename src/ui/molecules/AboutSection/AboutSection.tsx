@@ -25,12 +25,12 @@ const AboutSection: React.FC<AboutProps> = (props) => {
         <div className="text-center mt-20 mb-12">
           <SectionHeading>about.</SectionHeading>
         </div>
-        <div className="grid  md:grid-cols-2">
-          <div className="relative img-container">
-            <div className="dark-card" />
+        <div className="grid  md:grid-cols-[1fr_1fr]">
+          <div className="relative img-container mx-10 mb-20">
             <div className="light-card" />
+            <div className="dark-card" />
             <Image
-              className="about-img object-contain"
+              className="about-img object-cover "
               src={img as string}
               alt="Brandon"
               fill

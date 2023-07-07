@@ -5,14 +5,29 @@
 @screen md {
   .img-container {
     min-height: 700px;
-    background: var(--tp-color-green-300);
   }
+}
+
+.about-img {
+  border-radius: 18px;
 }
 
 .dark-card {
   background: var(--tp-color-green-600);
+  border-radius: 18px;
+  transform: rotate(-7deg);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -20px;
 }
 
 .light-card {
   background: var(--tp-color-green-300);
+  border-radius: 18px;
+  transform: rotate(7deg);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 45px;
 }

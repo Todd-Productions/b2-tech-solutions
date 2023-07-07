@@ -4,8 +4,6 @@
   - [ ] Add hover effect to arrow
 
 # Molecules
-- [-] Create AboutSection
-  - [ ] AboutSection author bg cards
 - [-] Nav
   - [ ] Hover effect on navlinks (maybe use button)
   - [ ] handle routing to work -  home, then scroll to work section
@@ -17,7 +15,6 @@
 # Templates
 
 # Pages
-
 
 # Misc.
 - [-] Adjust app font to font-family: Neue Montreal, Condensed Formula (large text);
