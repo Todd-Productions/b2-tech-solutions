@@ -21,5 +21,8 @@ export const Default: Story = {
       "SAP ID Senior Developer Consultant",
       "SAP Consulting firm, Global HQ - Nice, France, serving clients in Canada, France, Switzerland and beyond.",
     ],
+    img: "https://source.unsplash.com/random",
+    excerpt:
+      "INVENTY NORTH AMERICA, INC., JERSEY CITY, NJ / MONTRÉAL, QUÉBEC, CANADA",
   },
 }

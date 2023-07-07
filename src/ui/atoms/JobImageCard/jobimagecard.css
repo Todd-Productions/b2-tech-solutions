@@ -13,10 +13,8 @@
 
 .job-card-excerpt {
   position: absolute;
-  left: 50px;
   bottom: 50px;
   border-radius: 999px;
   color: var(--tp-color-black);
   background-color: var(--tp-color-white);
-  padding: 25px;
 }
