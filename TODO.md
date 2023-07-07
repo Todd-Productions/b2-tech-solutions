@@ -19,7 +19,6 @@
 
 # Page
 - [x] Add HomeTemplate to page
-  - [ ] Handle cookies for splash
 - [ ] Add AboutTemplate to page
 
 # Misc.
@@ -28,3 +27,4 @@
 - [ ] Should the entire ImageCard be clickable or just the arrow btn and title?
 - [ ] Fonts not taking effect in SB (works fine in dev)
 - [ ] ExperienceSidebar should be slide under the connect section in the about page
+- [ ] Add smooth transition when switching from splash to hometemplate? (check react transition group)
