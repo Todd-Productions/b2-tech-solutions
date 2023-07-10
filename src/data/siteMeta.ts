@@ -2,15 +2,15 @@ import { INavLink } from "@/types"
 
 export const navLinks: INavLink[] = [
   {
-    label: "Home",
+    label: "Home.",
     url: "/",
   },
   {
-    label: "Work",
+    label: "Work.",
     url: "/#work",
   },
   {
-    label: "About",
+    label: "About.",
     url: "/about",
   },
 ]

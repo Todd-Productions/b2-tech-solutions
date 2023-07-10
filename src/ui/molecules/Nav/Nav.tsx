@@ -25,7 +25,7 @@ const Nav: React.FC<NavProps> = (props) => {
           <Link
             key={slugify(link.label)}
             href={link.url}
-            className={`nav-item border border-grey-500 text-white rounded py-2 px-4 ${isActive}`}
+            className={`nav-item ${isActive}`}
           >
             <Button>{link.label}</Button>
           </Link>

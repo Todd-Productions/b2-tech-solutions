@@ -2,6 +2,14 @@
   margin: 0 2px;
 }
 
-.active {
+.nav-item button {
+  border: 1px solid rgba(251, 255, 245, 0.15);
+  color: #fbfff5;
+  background-color: transparent !important;
+  padding: 0 18px;
+  margin: 0 0 !important;
+}
+
+.active button {
   color: var(--tp-color-green-400);
 }

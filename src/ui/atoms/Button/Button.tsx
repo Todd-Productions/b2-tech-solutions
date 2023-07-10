@@ -37,12 +37,9 @@ const Button: React.FC<ButtonProps> = (props) => {
         }
       )}
     >
-      <div className="btn-text">
-        {children}
-        {includeArrow ? <Icon icon={faArrowRight} /> : null}
-      </div>
-      <div className="btn-text-2">
-        {children}
+      <div className="btn-text">{children}</div>
+      <div className="btn-text-2">{children}</div>
+      <div className="btn-arrow">
         {includeArrow ? <Icon icon={faArrowRight} /> : null}
       </div>
     </button>

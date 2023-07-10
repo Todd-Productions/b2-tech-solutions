@@ -35,7 +35,9 @@ const Header: React.FC<HeaderProps> = (props) => {
         </div>
         <div className="hidden sm:block header-item">
           <Link href={hireLink.url}>
-            <Button color="green">{hireLink.label}</Button>
+            <Button color="green" includeArrow>
+              {hireLink.label}
+            </Button>
           </Link>
         </div>
       </div>
