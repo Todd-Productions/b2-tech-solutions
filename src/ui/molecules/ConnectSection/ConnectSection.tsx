@@ -17,11 +17,11 @@ const ConnectSection: React.FC<ConnectProps> = (props) => {
   const { title, description, hireLink } = { title: "let's connect", ...props }
   return (
     <Section>
-      <div className="connect-container text-center">
+      <div className="connect-container text-center md:mb-24 md:mt-32">
         <SectionHeading>
           {title?.split(" ")[0]} <span className="green-heading">connect</span>
         </SectionHeading>
-        <div className="my-6 md:my-10">
+        <div className="mb-6 md:mb-10">
           {description.map((line) => (
             <p className="font-bold py-1" key={slugify(line)}>
               {line}

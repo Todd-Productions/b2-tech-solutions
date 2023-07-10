@@ -1,15 +1,3 @@
-@screen md {
-  .connect-container > h2 {
-    font-size: 125px;
-  }
-}
-
-@screen lg {
-  .connect-container > h2 {
-    font-size: 200px;
-  }
-}
-
 .green-heading {
   background-image: linear-gradient(
     to bottom,
