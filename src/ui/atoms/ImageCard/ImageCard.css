@@ -27,7 +27,7 @@
     visibility: visible;
     transform: translateY(0);
     color: var(--tp-color-white);
-    padding: 15px 10px 0 15px;
+    padding: 35px 10px 0 35px;
     font-size: 1.5rem;
     font-weight: 600;
     text-shadow: 2px 3px 5px rgba(0, 0, 0, 1);
@@ -82,4 +82,26 @@
 
 .image-card-icon > div > svg {
   transform: rotate(-45deg);
+}
+
+.image-card-icon {
+  transform: translate(0, 0);
+  overflow: hidden;
+}
+
+.image-card-icon:hover div svg {
+  transform: translate(300%, -300%) rotate(-45deg);
+  transition: transform 0.7s;
+}
+
+.image-card-arrow2 > div > svg {
+  transform: translate(-300%, 300%) rotate(-45deg);
+  visibility: hidden;
+  transition: transform 0.7s;
+}
+
+.image-card-icon:hover .image-card-arrow2 div svg {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0%, -150%) rotate(-45deg);
 }

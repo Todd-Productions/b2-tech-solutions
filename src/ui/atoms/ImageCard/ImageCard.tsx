@@ -25,6 +25,9 @@ const ImageCard: React.FC<ImageCardProps> = (props) => {
         <div className="show-text">{card.excerpt}</div>
         <div className="image-card-icon show-icon">
           <Icon icon={faArrowRight} />
+          <div className="image-card-arrow2">
+            <Icon icon={faArrowRight} />
+          </div>
         </div>
       </Link>
     </div>

@@ -36,9 +36,11 @@
   }
 }
 
-html {
-}
-
 h2 {
   font-family: var(--font-bebas-neue);
+}
+
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 }
