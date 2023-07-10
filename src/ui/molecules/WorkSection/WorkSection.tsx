@@ -19,9 +19,9 @@ const WorkSection: React.FC<WorkProps> = (props) => {
   return (
     <Section>
       <Wrapper>
-        <div className="content grid xl:grid-cols-2 py-12 gap-x-8">
+        <div className="content grid xl:grid-cols-2 gap-x-40">
           <SectionHeading>{header}</SectionHeading>
-          <div className="flex items-start xl:pt-20 text-xl md:text-3xl text-black-500">
+          <div className="flex items-start xl:pt-24 text-xl md:text-3xl text-black-500">
             <Image
               src="/images/blockquote.svg"
               height={50}

@@ -19,7 +19,7 @@ const Hero: React.FC<HeroProps> = (props) => {
     ...props,
   }
   return (
-    <div className="hero">
+    <div className="hero flex items-end">
       <Image className="hero-img" src={img as string} alt="hero" fill />
       <div className="hero-content">{children}</div>
     </div>
