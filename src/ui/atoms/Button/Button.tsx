@@ -19,7 +19,7 @@ export interface ButtonProps {
 const Button: React.FC<ButtonProps> = (props) => {
   const { type, children, fullWidth, color, onClick } = {
     type: "button",
-    color: "green",
+    color: "white",
     ...props,
   }
 

@@ -13,8 +13,17 @@ export interface ExperienceProps {
 const ExperienceSection: React.FC<ExperienceProps> = (props) => {
   const { jobs } = props
 
-  const getJobYears = (data: ExperienceProps) =>
-    data.jobs.map((job) => job.timeline.split(" - ")[1].split(" ")[1])
+  const getJobYears = (data: ExperienceProps) => {
+    const uniqueYears: string[] = []
+    data.jobs.forEach((job) => {
+      if (
+        uniqueYears[uniqueYears.length - 1] !==
+        job.timeline.split(" - ")[0].split(" ")[1]
+      )
+        uniqueYears.push(job.timeline.split(" - ")[0].split(" ")[1])
+    })
+    return uniqueYears
+  }
 
   return (
     <Section>

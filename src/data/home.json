@@ -1,4 +1,32 @@
 {
   "title": "Here is title",
-  "content": "Here is some main content"
+  "content": "Here is some main content",
+  "bannerImage": "https://source.unsplash.com/random",
+  "workDescription": "Explore our transformative consulting projects in SAP IDM, led by Brandon, an experienced SAP IDM professional and MSCE-certified expert.",
+  "connectDescription": [
+    "Experienced SAP IDM professional and MSCE-certified expert.",
+    "Drive your IDM projects to success with my technical expertise."
+  ],
+  "jobCards": [
+    {
+      "img": "https://source.unsplash.com/random",
+      "excerpt": "upgrade of sap idm migration and from v7.1 to v8.0",
+      "projectLink": "/"
+    },
+    {
+      "img": "https://source.unsplash.com/random",
+      "excerpt": "idm implementation for manufacturing company",
+      "projectLink": "/"
+    },
+    {
+      "img": "https://source.unsplash.com/random",
+      "excerpt": "management identity & access strategy",
+      "projectLink": "/"
+    },
+    {
+      "img": "https://source.unsplash.com/random",
+      "excerpt": "implementation for identity governance government agency",
+      "projectLink": "/"
+    }
+  ]
 }

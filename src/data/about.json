@@ -1,4 +1,79 @@
 {
   "title": "About Content",
-  "content": "Here is some content"
+  "content": "Here is some content",
+  "aboutImg": "https://source.unsplash.com/random",
+  "aboutDescription": "An experienced SAP IDM professional and MSCE-certified expert. Develops IDM solutions (v7.1 to v8.0). Available for new projects or long-term positions, offering technical expertise to optimize your environment.",
+  "connectDescription": [
+    "Experienced SAP IDM professional and MSCE-certified expert.",
+    "Drive your IDM projects to success with my technical expertise."
+  ],
+  "jobs": [
+    {
+      "title": "Senior Consultant",
+      "timeline": "Aug 2017 - Mar 2019",
+      "company": "Inventy NA, Inc.",
+      "bulletPoints": [
+        "SAP ID Senior Developer Consultant",
+        " SAP Consulting firm, Global HQ - Nice, France, serving clients in Canada, France, Switzerland and beyond."
+      ],
+      "img": "https://source.unsplash.com/random",
+      "excerpt": "INVENTY NORTH AMERICA, INC., JERSEY CITY, NJ / MONTRÉAL, QUÉBEC, CANADA"
+    },
+
+    {
+      "title": "Developer Consultant",
+      "timeline": "Apr 2016 - Jul 2017",
+      "company": "Coke One North America",
+      "bulletPoints": [
+        "SAP IDM Developer Consultant",
+        "IT Services Corporation servicing Coca-Cola bottlers in the United States."
+      ],
+      "img": "https://source.unsplash.com/random",
+      "excerpt": "INVENTY NORTH AMERICA, INC., JERSEY CITY, NJ / MONTRÉAL, QUÉBEC, CANADA"
+    },
+    {
+      "title": "Owner",
+      "timeline": "Nov 2014 - Mar 2016",
+      "company": "Tutor Doctor",
+      "bulletPoints": [
+        "Owner / Senior Education Consultant",
+        "One-on-one supplementary education and ACT test preparations company."
+      ],
+      "img": "https://source.unsplash.com/random",
+      "excerpt": "B. AVERY ENTERPRISES, INC., DBA TUTOR DOCTOR OF GREATER TOLEDO, SYLVANIA, OH"
+    },
+    {
+      "title": "Senior Consultant",
+      "timeline": "Jul 2014 - Oct 2014",
+      "company": "Commercium Technology, Inc",
+      "bulletPoints": [
+        "SAP Identify Management Developer",
+        "Identity & access management, data management & collaboration, and data security consulting firm."
+      ],
+      "img": "https://source.unsplash.com/random",
+      "excerpt": "COMMERCIUM TECHNOLOGY, INC., RUMSON, NJ"
+    },
+    {
+      "title": "Administrator",
+      "timeline": "Oct 2008 - May 2013",
+      "company": "First Solar",
+      "bulletPoints": [
+        "Identity and Access Management Administrator",
+        "Designer and manufacturer of solar panels for commercial power grid and residential energy production."
+      ],
+      "img": "https://source.unsplash.com/random",
+      "excerpt": "FIRST SOLAR, INC., PERRYSBURG, OH"
+    },
+    {
+      "title": "Support Technician",
+      "timeline": "MAY 2007 - OCT 2008",
+      "company": "Faurecia Exhaust Systems",
+      "bulletPoints": [
+        "Desktop/Network Support Technician",
+        "Automotive supplier, main technical hub for Faurecia Exhaust for all of North America - 200+ users supported."
+      ],
+      "img": "https://source.unsplash.com/random",
+      "excerpt": "Faurecia Exhaust Systems, Toledo, OH"
+    }
+  ]
 }

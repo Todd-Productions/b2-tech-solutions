@@ -1,4 +1,6 @@
 {
   "title": "Contact Title",
-  "content": "Here is some content"
+  "content": "Here is some content",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend aliquet felis, ac aliquet massa pulvinar quis. Quisque sem urna, facilisis vitae libero et, consequat suscipit nulla.",
+  "email": "email@email.com"
 }
