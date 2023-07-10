@@ -34,6 +34,7 @@ const Button: React.FC<ButtonProps> = (props) => {
         {
           [`btn-${color}`]: true,
           "btn-block": fullWidth,
+          testing: includeArrow,
         }
       )}
     >

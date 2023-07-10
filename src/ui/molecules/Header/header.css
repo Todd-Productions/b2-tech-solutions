@@ -15,7 +15,7 @@
 
 @screen md {
   .header {
-    max-width: 600px;
+    max-width: fit-content;
   }
 }
 

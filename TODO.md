@@ -1,6 +1,6 @@
 # Atoms
 - [-] Button
-  - [ ] Add hover effect to arrow
+  - [-] Add hover effect to arrow
 
 # Molecules
 - [-] Nav
@@ -20,5 +20,5 @@
 - [ ] ExperienceSidebar should be slide under the connect section in the about page
 - [ ] Add smooth transition when switching from splash to hometemplate? (check react transition group)
   - [ ] With useState, users can briefly see splash (state set to false) even if already visited
-  
+
 - [ ] Fonts not taking effect in SB (works fine in dev)
