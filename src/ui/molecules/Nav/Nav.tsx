@@ -5,8 +5,9 @@ import Link from "next/link"
 import slugify from "slugify"
 import { usePathname } from "next/navigation"
 
-import "./nav.css"
 import { INavLink } from "../../../types"
+import { Button } from "../../atoms"
+import "./nav.css"
 
 export interface NavProps {
   links: INavLink[]
@@ -26,7 +27,7 @@ const Nav: React.FC<NavProps> = (props) => {
             href={link.url}
             className={`nav-item border border-grey-500 text-white rounded py-2 px-4 ${isActive}`}
           >
-            {link.label}
+            <Button>{link.label}</Button>
           </Link>
         )
       })}

@@ -13,11 +13,12 @@ export interface ButtonProps {
   color?: ButtonColors
   children?: string
   fullWidth?: boolean
+  includeArrow?: boolean
   onClick?: () => void
 }
 
 const Button: React.FC<ButtonProps> = (props) => {
-  const { type, children, fullWidth, color, onClick } = {
+  const { type, children, fullWidth, color, onClick, includeArrow } = {
     type: "button",
     color: "white",
     ...props,
@@ -37,10 +38,12 @@ const Button: React.FC<ButtonProps> = (props) => {
       )}
     >
       <div className="btn-text">
-        {children} <Icon icon={faArrowRight} />
+        {children}
+        {includeArrow ? <Icon icon={faArrowRight} /> : null}
       </div>
       <div className="btn-text-2">
-        {children} <Icon icon={faArrowRight} />
+        {children}
+        {includeArrow ? <Icon icon={faArrowRight} /> : null}
       </div>
     </button>
   )

@@ -1,5 +1,16 @@
 @import "tailwindcss/base";
 
+.footer-link div {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-link button {
+  border: none !important;
+  margin: 0 15px !important;
+}
+
 @layer base {
   .footer {
     flex-direction: column;

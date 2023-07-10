@@ -3,7 +3,7 @@ import Link from "next/link"
 import slugify from "slugify"
 
 import { INavLink } from "../../../types"
-import { Wrapper } from "../../atoms"
+import { Wrapper, Button } from "../../atoms"
 import "./footer.css"
 
 export interface FooterProps {
@@ -22,11 +22,11 @@ const Footer: React.FC<FooterProps> = (props) => {
           <div>
             {links.map((link) => (
               <Link
-                className="md:ml-20 mx-4 p-0"
+                className="footer-link  mx-4 p-0"
                 href={link.url}
                 key={slugify(link.label)}
               >
-                {link.label}
+                <Button>{link.label}</Button>
               </Link>
             ))}
           </div>

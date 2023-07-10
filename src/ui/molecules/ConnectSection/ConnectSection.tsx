@@ -29,7 +29,7 @@ const ConnectSection: React.FC<ConnectProps> = (props) => {
           ))}
         </div>
         <Link href={hireLink.url}>
-          <Button>{hireLink.label}</Button>
+          <Button includeArrow>{hireLink.label}</Button>
         </Link>
       </div>
     </Section>
