@@ -28,7 +28,7 @@ const ExperienceSection: React.FC<ExperienceProps> = (props) => {
   return (
     <Section>
       <Wrapper>
-        <div className="grid md:grid-cols-[250px_1fr] lg:grid-cols-[475px_1fr]">
+        <div className="grid md:grid-cols-[250px_1fr] lg:grid-cols-[375px_1fr]">
           <div className="hidden md:block">
             <div className="sticky top-40">
               <ExperienceSidebar years={getJobYears(props)} />

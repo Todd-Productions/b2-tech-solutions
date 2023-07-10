@@ -31,3 +31,21 @@
   position: absolute;
   top: 45px;
 }
+
+.text-content {
+  line-height: 35px;
+}
+
+@screen md {
+  .text-content {
+    line-height: 55px;
+  }
+}
+
+.resume-btn button {
+  border-radius: 999px;
+}
+
+.resume-btn button div {
+  text-transform: uppercase;
+}

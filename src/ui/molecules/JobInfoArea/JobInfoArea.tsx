@@ -23,24 +23,26 @@ const JobInfoArea: React.FC<JobInfoProps> = (props) => {
 
   return (
     <Section>
-      <div className="grid md:grid-cols-[1fr_1fr] text-xl">
-        <div>
-          <SectionSubHeading>{title}</SectionSubHeading>
-          <p>{timeline}</p>
-          <p>{company}</p>
+      <div className="mb-8 md:mb-32">
+        <div className="grid md:grid-cols-[1fr_2fr] text-xl mb-14">
+          <div>
+            <SectionSubHeading>{title}</SectionSubHeading>
+            <p>{timeline}</p>
+            <p className="italic">{company}</p>
+          </div>
+          <div>
+            <ul>
+              {bulletPoints.map((bullet) => (
+                <li className="list-disc text-4xl" key={slugify(bullet)}>
+                  {bullet}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <div>
-          <ul>
-            {bulletPoints.map((bullet) => (
-              <li className="list-disc" key={slugify(bullet)}>
-                {bullet}
-              </li>
-            ))}
-          </ul>
+        <div className="mt-4 flex justify-end">
+          <JobImageCard img={img as string} excerpt={excerpt} />
         </div>
-      </div>
-      <div className="mt-4 flex justify-end">
-        <JobImageCard img={img as string} excerpt={excerpt} />
       </div>
     </Section>
   )

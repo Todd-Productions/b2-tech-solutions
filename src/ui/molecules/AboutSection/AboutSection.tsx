@@ -25,7 +25,7 @@ const AboutSection: React.FC<AboutProps> = (props) => {
         <div className="text-center mt-20 mb-12">
           <SectionHeading>about.</SectionHeading>
         </div>
-        <div className="grid  md:grid-cols-[1fr_1fr]">
+        <div className="grid gap-x-24 md:grid-cols-[1fr_1fr]">
           <div className="relative img-container mx-10 mb-20">
             <div className="light-card" />
             <div className="dark-card" />
@@ -39,10 +39,12 @@ const AboutSection: React.FC<AboutProps> = (props) => {
 
           <div className="pl-8">
             <SectionSubHeading textGreen>Who&apos;s Brandon?</SectionSubHeading>
-            <p className="my-12 text-black-500 text-2xl md:text-4xl">
+            <p className="my-12 text-black-500 text-3xl md:text-5xl text-content leading-2!">
               {description}
             </p>
-            <Button>download resume</Button>
+            <div className="resume-btn">
+              <Button>download resume</Button>
+            </div>
           </div>
         </div>
       </Wrapper>

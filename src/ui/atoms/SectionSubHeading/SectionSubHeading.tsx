@@ -11,9 +11,9 @@ const SectionSubHeading: React.FC<SectionSubHeadingProps> = (props) => {
 
   return (
     <h3
-      className={cns("font-bold text-xl mb-2 relative capitalize", {
+      className={cns("font-bold text-xl md:text-2xl mb-2 relative capitalize", {
         "text-green-600": textGreen,
-        "text-grey-500": !textGreen,
+        "text-black-500": !textGreen,
       })}
     >
       {children}
