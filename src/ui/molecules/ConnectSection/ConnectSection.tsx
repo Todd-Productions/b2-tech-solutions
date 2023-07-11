@@ -28,9 +28,11 @@ const ConnectSection: React.FC<ConnectProps> = (props) => {
             </p>
           ))}
         </div>
-        <Link href={hireLink.url}>
-          <Button includeArrow>{hireLink.label}</Button>
-        </Link>
+        <div className="mx-auto w-fit">
+          <Link href={hireLink.url}>
+            <Button includeArrow>{hireLink.label}</Button>
+          </Link>
+        </div>
       </div>
     </Section>
   )

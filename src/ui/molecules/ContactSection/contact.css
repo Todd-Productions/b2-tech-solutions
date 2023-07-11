@@ -7,6 +7,10 @@
   font-size: 32px;
 }
 
+.phone {
+  margin-bottom: 25px;
+}
+
 .green-text {
   background-image: linear-gradient(
     to bottom,

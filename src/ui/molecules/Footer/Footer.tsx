@@ -19,10 +19,10 @@ const Footer: React.FC<FooterProps> = (props) => {
           <div className="mb-2">
             <p>© B2 Tech Solutions 2023</p>
           </div>
-          <div>
+          <div className="flex flex-col md:flex-row items-center">
             {links.map((link) => (
               <Link
-                className="footer-link  mx-4 p-0"
+                className="footer-link mx-4 p-0"
                 href={link.url}
                 key={slugify(link.label)}
               >
