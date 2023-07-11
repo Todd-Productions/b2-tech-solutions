@@ -23,7 +23,7 @@ const Splash: React.FC<SplashProps> = (props) => {
       </div>
 
       <div className="btn-container">
-        <Button onClick={onClick} color="black">
+        <Button onClick={onClick} color="black" includeArrow>
           start now
         </Button>
       </div>

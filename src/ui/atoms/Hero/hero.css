@@ -3,6 +3,33 @@
 .hero-img {
   object-fit: cover;
   object-position: center center;
+  animation: scaling-hero-anim 0.5s 0.25s cubic-bezier(0, 0.71, 0.4, 0.97);
+}
+
+/* Zoom Out Animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes scaling-hero-anim {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes clip-hero-anim {
+  from {
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
 }
 
 @layer base {
@@ -28,6 +55,9 @@
     .hero-content {
       font-size: 120px;
       line-height: 120px;
+      position: relative;
+      opacity: 0;
+      animation: slideUp ease 0.4s forwards;
     }
 
     .hero {
@@ -46,5 +76,21 @@
       font-size: 280px;
       line-height: 250px;
     }
+  }
+}
+
+.slide-up {
+  top: auto;
+  left: auto;
+  animation: slideUp ease 0.5s forwards 0.25s;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(auto);
+    opacity: 1;
   }
 }

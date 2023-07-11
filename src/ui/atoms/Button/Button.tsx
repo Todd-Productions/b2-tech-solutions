@@ -41,7 +41,11 @@ const Button: React.FC<ButtonProps> = (props) => {
       </div>
       {includeArrow ? (
         <div>
-          <span className="arrow" />
+          <span
+            className={cns("arrow", {
+              "arrow-white": color?.length,
+            })}
+          />
         </div>
       ) : null}
     </button>
