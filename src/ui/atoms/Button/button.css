@@ -1,23 +1,18 @@
 .button {
   padding: 0 35px;
   overflow-y: hidden;
-  width: fit-content;
   border-radius: 12px;
-}
-
-.btn-white {
   background-color: var(--tp-color-white) !important;
   border: var(--tp-color-black-500) 1px solid;
   color: var(--tp-color-black-500);
-}
-
-.btn-black {
-  background-color: var(--tp-color-black-600) !important;
-  border: 1px solid #fbfff526;
-  color: var(--tp-color-white);
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
 
 .btn-green {
+  padding: 0 15px;
+
   border: 3px solid var(--tp-color-blue-500);
   color: var(--tp-color-white);
   background: linear-gradient(
@@ -36,18 +31,13 @@
   ) !important;
 }
 
-.btn-lg {
-  padding: 1.5rem 4rem;
-  font-size: 2rem;
-  margin: 0 auto;
-  display: block;
+.btn-black {
+  background-color: var(--tp-color-black-600) !important;
+  border: 1px solid #fbfff526;
+  color: var(--tp-color-white);
 }
 
-.btn-sm {
-  padding: 0.8rem 1rem;
-  font-size: 1rem;
-}
-
+/*  text hover effects */
 .btn-block {
   margin: 0;
   width: 100%;
@@ -69,9 +59,11 @@ button:hover .btn-text {
 }
 
 .btn-text-2 {
+  white-space: nowrap;
   visibility: hidden;
   text-transform: capitalize;
   letter-spacing: 3px;
+  font-size: 1rem;
   transition: all 0.3s ease-in-out;
   opacity: 0;
   transform: translate(0, 100%);
@@ -84,13 +76,35 @@ button:hover .btn-text-2 {
   transform: translate(0, -50%);
 }
 
-.btn-arrow {
-  position: absolute;
-  right: 20px;
-  bottom: 22px;
-  transition: all 0.3s ease-in-out;
+/* arrow hover effects */
+.arrow {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
-button:hover .btn-arrow {
-  transform: scale(1.3);
+.arrow:before {
+  content: "";
+  height: 2px;
+  width: 15px;
+  background-color: var(--tp-color-white);
+  display: block;
+  float: left;
+  position: relative;
+  top: 7px;
+  transition: 0.25s ease-in-out;
+}
+
+.arrow:after {
+  content: "";
+  float: left;
+  border-left: 8px solid var(--tp-color-white);
+  border-right: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+button:hover .arrow:before {
+  width: 30px;
 }

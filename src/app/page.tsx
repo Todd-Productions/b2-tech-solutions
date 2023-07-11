@@ -9,7 +9,7 @@ import { navLinks, footerLinks, contactLink } from "../data/siteMeta"
 import data from "../data/home.json"
 
 const HomePage = () => {
-  const [userVisited, setUserVisited] = useState(false)
+  const [userVisited, setUserVisited] = useState(true)
 
   const handleCookies = () => {
     setCookie("userVisited", true)
