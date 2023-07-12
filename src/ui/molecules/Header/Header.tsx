@@ -2,13 +2,14 @@ import React from "react"
 import Image from "next/image"
 import Link from "next/link"
 
-import { INavLink, ISocialLinks } from "../../../types"
-
 import { Button } from "../../atoms"
 import Nav from "../Nav/Nav"
 import "./header.css"
 
-export interface HeaderProps extends ISocialLinks {
+// @types
+import { INavLink } from "../../../types"
+
+export interface HeaderProps {
   links: INavLink[]
   hireLink: INavLink
 }

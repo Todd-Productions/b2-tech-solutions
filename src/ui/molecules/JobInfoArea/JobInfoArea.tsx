@@ -2,16 +2,7 @@ import React from "react"
 import slugify from "slugify"
 
 import { Section, SectionSubHeading, JobImageCard } from "../../atoms"
-import { UrlType } from "../../../types"
-
-export interface IJobInfo {
-  title: string
-  timeline: string
-  company: string
-  bulletPoints: string[]
-  img: UrlType
-  excerpt: string
-}
+import { IJobInfo } from "../../../types"
 
 export interface JobInfoProps {
   job: IJobInfo

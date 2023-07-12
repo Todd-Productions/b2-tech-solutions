@@ -1,14 +1,14 @@
+"use client"
+
 import React from "react"
 
 import { ContactTemplate } from "../../ui/templates"
-import { navLinks, footerLinks, contactLink } from "../../data/siteMeta"
+import getDefaultProps from "../../../utils/common"
 import data from "../../data/contact.json"
 
 const ContactPage = () => (
   <ContactTemplate
-    navLinks={navLinks}
-    footerLinks={footerLinks}
-    hireMeLink={contactLink}
+    {...getDefaultProps()}
     email={data.email}
     description={data.description}
   />

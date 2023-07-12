@@ -5,7 +5,7 @@ import { setCookie, hasCookie } from "cookies-next"
 
 import { HomeTemplate } from "../ui/templates"
 import { Splash } from "../ui/organisms"
-import { navLinks, footerLinks, contactLink } from "../data/siteMeta"
+import getDefaultProps from "../../utils/common"
 import data from "../data/home.json"
 
 const HomePage = () => {
@@ -26,9 +26,7 @@ const HomePage = () => {
 
   return userVisited ? (
     <HomeTemplate
-      navLinks={navLinks}
-      footerLinks={footerLinks}
-      hireMeLink={contactLink}
+      {...getDefaultProps()}
       bannerImg={data.bannerImage}
       workDescription={data.workDescription}
       jobCards={data.jobCards}

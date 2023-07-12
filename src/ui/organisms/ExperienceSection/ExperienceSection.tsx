@@ -4,7 +4,7 @@ import slugify from "slugify"
 import { Section, Wrapper } from "../../atoms"
 import { JobInfoArea, ExperienceSidebar } from "../../molecules"
 
-import { IJobInfo } from "../../molecules/JobInfoArea/JobInfoArea"
+import { IJobInfo } from "../../../types"
 
 export interface ExperienceProps {
   jobs: IJobInfo[]

@@ -3,14 +3,12 @@
 import React from "react"
 
 import { AboutTemplate } from "../../ui/templates"
-import { navLinks, footerLinks, contactLink } from "../../data/siteMeta"
+import getDefaultProps from "../../../utils/common"
 import data from "../../data/about.json"
 
 const AboutPage = () => (
   <AboutTemplate
-    navLinks={navLinks}
-    footerLinks={footerLinks}
-    hireMeLink={contactLink}
+    {...getDefaultProps()}
     aboutImg={data.aboutImg}
     aboutDescription={data.aboutDescription}
     connectDescription={data.connectDescription}

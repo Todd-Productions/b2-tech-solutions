@@ -3,9 +3,9 @@ import Link from "next/link"
 import slugify from "slugify"
 
 import { Section, SectionHeading, Button } from "../../atoms"
+import "./connect.css"
 
 import { INavLink } from "../../../types"
-import "./connect.css"
 
 export interface ConnectProps {
   title?: string

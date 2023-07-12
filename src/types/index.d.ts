@@ -15,9 +15,19 @@ export interface ISocialLinks {
   twitter?: string
 }
 
-// ImageCard - Used on home page
+// ImageCard - Home Page
 export interface IImageCard {
   img: UrlType
   excerpt: string
   projectLink: UrlType
+}
+
+// JobInfoArea - About Page
+export interface IJobInfo {
+  title: string
+  timeline: string
+  company: string
+  bulletPoints: string[]
+  img: UrlType
+  excerpt: string
 }

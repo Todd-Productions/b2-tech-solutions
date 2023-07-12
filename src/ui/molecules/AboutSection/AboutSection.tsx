@@ -43,7 +43,7 @@ const AboutSection: React.FC<AboutProps> = (props) => {
               {description}
             </p>
             <div className="resume-btn">
-              <Button>download resume</Button>
+              <Button>DOWNLOAD RESUME</Button>
             </div>
           </div>
         </div>

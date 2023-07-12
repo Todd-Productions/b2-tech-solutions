@@ -1,11 +1,11 @@
 import React from "react"
 
-import { UrlType } from "../../../types"
 import { AboutSection, ConnectSection } from "../../molecules"
 import { MainLayout, ExperienceSection } from "../../organisms"
 import { DefaultProps, getMainLayoutProps } from "../HomeTemplate/HomeTemplate"
 
-import { IJobInfo } from "../../molecules/JobInfoArea/JobInfoArea"
+// @types
+import { UrlType, IJobInfo } from "../../../types"
 
 export interface AboutProps extends DefaultProps {
   aboutImg: UrlType
