@@ -1,7 +1,6 @@
 import React from "react"
 
-import { ContactSection } from "../../molecules"
-import { MainLayout } from "../../organisms"
+import { ContactSection, MainLayout } from "../../organisms"
 import { DefaultProps, getMainLayoutProps } from "../HomeTemplate/HomeTemplate"
 
 export interface ContactProps extends DefaultProps {
