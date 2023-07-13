@@ -10,6 +10,7 @@
 
 # Misc.
 - [ ] ExperienceSidebar should be slide under the connect section in the about page
+  - [ ] Arrow scroll effect on hover
 - [ ] Need fonts form figma: Neue Montreal, Condensed Formula (large text);
 
 # Backlog
