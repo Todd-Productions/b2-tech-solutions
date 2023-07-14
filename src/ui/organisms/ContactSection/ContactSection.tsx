@@ -2,15 +2,18 @@ import React from "react"
 
 import { Section, Wrapper, SectionSubHeading } from "../../atoms"
 import { ContactForm } from "../../molecules"
+import { IContactState } from "../../molecules/ContactForm/ContactForm"
 import "./contact.css"
 
 export interface ContactProps {
   description?: string
   email: string
+  /* eslint-disable-next-line no-unused-vars */
+  handleSubmit: (formData: IContactState) => void
 }
 
 const ContactSection: React.FC<ContactProps> = (props) => {
-  const { email } = props
+  const { email, handleSubmit } = props
   return (
     <Section>
       <Wrapper>
@@ -32,7 +35,7 @@ const ContactSection: React.FC<ContactProps> = (props) => {
             </a>
           </div>
           <div>
-            <ContactForm />
+            <ContactForm handleSubmission={handleSubmit} />
           </div>
         </div>
       </Wrapper>
