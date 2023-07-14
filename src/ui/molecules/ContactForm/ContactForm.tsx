@@ -41,7 +41,7 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
           type="text"
           id="name"
           placeholder="Name"
-          {...register("name")}
+          {...register("name", { required: true })}
         />
       </div>
 
@@ -54,10 +54,17 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
         </label>
         <input
           className="rounded border border-solid border-gray-500 p-4 w-full"
-          type="text"
+          type="email"
           id="email"
           placeholder="Email"
-          {...register("email", { required: true })}
+          {...register("email", {
+            required: "This field is required",
+            pattern: {
+              value:
+                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+              message: "Invalid Email",
+            },
+          })}
         />
       </div>
 
@@ -70,10 +77,16 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
         </label>
         <input
           className="rounded border border-solid border-gray-500 p-4 w-full"
-          type="text"
+          type="tel"
           id="phone"
           placeholder="Phone"
-          {...register("phone", { required: true })}
+          {...register("phone", {
+            required: "Cell Phone is required",
+            pattern: {
+              value: /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s./0-9]*$/g,
+              message: "Invalid phone number",
+            },
+          })}
         />
       </div>
 
