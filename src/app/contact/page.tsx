@@ -18,8 +18,8 @@ const handleSubmit = async (formData: any) => {
     return res
   } catch (error) {
     console.error("Error while subitting the form:", error)
+    return error
   }
-  return formData
 }
 
 const ContactPage = () => (

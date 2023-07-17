@@ -66,6 +66,9 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
             },
           })}
         />
+        {errors.email && (
+          <div className="text-red-500">{errors.email.message}*</div>
+        )}
       </div>
 
       <div className="bg-white pb-4">
@@ -89,6 +92,9 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
           })}
         />
       </div>
+      {errors.phone && (
+        <div className="text-red-500">{errors.phone.message}*</div>
+      )}
 
       <div className="bg-white pb-4">
         <label
