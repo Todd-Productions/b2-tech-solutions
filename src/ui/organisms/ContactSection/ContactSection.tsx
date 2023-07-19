@@ -1,21 +1,25 @@
 import React from "react"
 
 import { Section, Wrapper, SectionSubHeading } from "../../atoms"
+import { ContactForm } from "../../molecules"
+import { IContactState } from "../../molecules/ContactForm/ContactForm"
 import "./contact.css"
 
 export interface ContactProps {
-  description: string
+  description?: string
   email: string
+  /* eslint-disable-next-line no-unused-vars */
+  handleSubmit: (formData: IContactState) => void
 }
 
 const ContactSection: React.FC<ContactProps> = (props) => {
-  const { description, email } = props
+  const { email, handleSubmit } = props
   return (
     <Section>
       <Wrapper>
-        <div className="grid md:grid-cols-[2fr_1fr] items-center min-h-[80vh]">
-          <div>
-            <div className="flex flex-col items-start justify-center mb-20 font-bold">
+        <div className="grid md:grid-cols-[2fr_1fr] items-start mt-24">
+          <div className="bg-black">
+            <div className="flex flex-col items-start justify-center my-20 font-bold">
               <h1 className="text-9xl">GET IN</h1>
               <div className="self-center text-9xl">
                 <h1 className="green-text">TOUCH</h1>
@@ -31,7 +35,7 @@ const ContactSection: React.FC<ContactProps> = (props) => {
             </a>
           </div>
           <div>
-            <p className="text-2xl text-black-500">{description}</p>
+            <ContactForm handleSubmission={handleSubmit} />
           </div>
         </div>
       </Wrapper>

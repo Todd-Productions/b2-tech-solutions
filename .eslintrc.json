@@ -14,6 +14,7 @@
     "semi": "off",
     "quotes": "off",
     "comma-dangle": "off",
+    "import/prefer-default-export": "warn",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-props-no-spreading": "off",
@@ -35,6 +36,7 @@
     ],
     "react/no-unused-prop-types": "warn",
     "jsx-a11y/anchor-is-valid": "warn",
-    "import/extensions": 0
+    "import/extensions": 0,
+    "jsx-a11y/label-has-associated-control": "off"
   }
 }
