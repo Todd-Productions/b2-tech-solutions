@@ -15,7 +15,7 @@ const ContactTemplate: React.FC<ContactProps> = (props) => {
   const { description, email, handleSubmit } = props
 
   return (
-    <MainLayout {...getMainLayoutProps(props)}>
+    <MainLayout {...getMainLayoutProps(props)} displayHireMobile>
       <ContactSection
         description={description}
         email={email}

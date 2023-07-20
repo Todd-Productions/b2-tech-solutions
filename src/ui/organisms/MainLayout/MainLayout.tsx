@@ -8,14 +8,19 @@ export interface MainLayoutProps {
   navLinks: INavLink[]
   footerLinks: INavLink[]
   hireLink: INavLink
+  displayHireMobile?: boolean
 }
 
 const MainLayout: React.FC<MainLayoutProps> = (props: MainLayoutProps) => {
-  const { children, navLinks, footerLinks, hireLink } = props
+  const { children, navLinks, footerLinks, hireLink, displayHireMobile } = props
 
   return (
     <div>
-      <Header links={navLinks} hireLink={hireLink} />
+      <Header
+        links={navLinks}
+        hireLink={hireLink}
+        displayHireMobile={displayHireMobile}
+      />
       <main>{children}</main>
       <Footer links={footerLinks} />
     </div>

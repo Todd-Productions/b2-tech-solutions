@@ -22,3 +22,12 @@
 .header-item {
   text-align: text-center;
 }
+
+.mobile-btn {
+  background-color: blue;
+  padding: 50px;
+  margin: 0 auto !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
