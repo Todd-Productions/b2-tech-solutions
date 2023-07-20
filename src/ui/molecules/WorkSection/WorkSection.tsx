@@ -27,11 +27,11 @@ const WorkSection: React.FC<WorkProps> = (props) => {
               width={50}
               alt="B2 Tech Solutions"
             />
-            <p className="pl-8">{description}</p>
+            <p className="pl-8 text-xl">{description}</p>
           </div>
         </div>
 
-        <div className="flex justify-center justify-around items-center flex-wrap gap-y-8 mt-20">
+        <div className="flex justify-center justify-center items-center flex-wrap gap-8 mt-10">
           {cards.map((card) => (
             <div
               className="justify-self-center w-11/12 lg:w-auto"

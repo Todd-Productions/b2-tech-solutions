@@ -14,8 +14,8 @@ const JobInfoArea: React.FC<JobInfoProps> = (props) => {
 
   return (
     <Section>
-      <div className="mb-8 md:mb-32">
-        <div className="grid md:grid-cols-[1fr_2fr] text-xl mb-14">
+      <div className="mb-8 md:mb-32 md:mx-20">
+        <div className="grid lg:grid-cols-[1fr_2fr] text-base mb-14">
           <div>
             <SectionSubHeading>{title}</SectionSubHeading>
             <p>{timeline}</p>
@@ -24,7 +24,7 @@ const JobInfoArea: React.FC<JobInfoProps> = (props) => {
           <div>
             <ul>
               {bulletPoints.map((bullet) => (
-                <li className="list-disc text-4xl" key={slugify(bullet)}>
+                <li className="list-disc text-xl" key={slugify(bullet)}>
                   {bullet}
                 </li>
               ))}

@@ -5,12 +5,12 @@
 
 @screen lg {
   .section-heading {
-    font-size: 215px;
+    font-size: 200px;
   }
 }
 
 @screen xl {
   .section-heading {
-    font-size: 320px;
+    font-size: 225px;
   }
 }

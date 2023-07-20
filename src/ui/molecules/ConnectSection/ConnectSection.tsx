@@ -17,7 +17,7 @@ const ConnectSection: React.FC<ConnectProps> = (props) => {
   const { title, description, hireLink } = { title: "let's connect", ...props }
   return (
     <Section>
-      <div className="connect-container text-center md:mb-24 md:mt-32">
+      <div className="connect-container text-center md:mb-24">
         <SectionHeading>
           {title?.split(" ")[0]} <span className="green-heading">connect</span>
         </SectionHeading>

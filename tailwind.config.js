@@ -19,6 +19,7 @@ module.exports = {
         },
       },
       fontFamily: {},
+      fontSize: {},
     },
   },
   screens: {

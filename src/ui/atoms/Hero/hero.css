@@ -71,10 +71,8 @@
     }
 
     .hero-content {
+      font-size: 210px;
       line-height: 180px;
-
-      font-size: 280px;
-      line-height: 250px;
     }
   }
 }
