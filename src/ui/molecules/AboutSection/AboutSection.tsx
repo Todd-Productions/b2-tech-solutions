@@ -26,15 +26,17 @@ const AboutSection: React.FC<AboutProps> = (props) => {
           <SectionHeading>about.</SectionHeading>
         </div>
         <div className="grid gap-x-24 md:mb-20 justify-center md:grid-cols-[1fr_1fr]">
-          <div className="relative img-container">
-            <div className="light-card" />
-            <div className="dark-card" />
-            <Image
-              className="about-img object-cover "
-              src={img as string}
-              alt="Brandon"
-              fill
-            />
+          <div className="mx-10 md:ml-12">
+            <div className="relative img-container">
+              <div className="light-card" />
+              <div className="dark-card" />
+              <Image
+                className="about-img object-cover "
+                src={img as string}
+                alt="Brandon"
+                fill
+              />
+            </div>
           </div>
 
           <div className="pl-8 mt-32">
