@@ -26,7 +26,7 @@ const ExperienceSidebar: React.FC<ExperienceProps> = (props) => {
     <div className="flex flex-col items-start justify-center text-5xl">
       <div className="years-list">
         {years.map((year) => (
-          <div className="pb-8 text-grey-600" key={slugify(String(year))}>
+          <div className="pb-6 text-grey-600" key={slugify(String(year))}>
             {year}
           </div>
         ))}

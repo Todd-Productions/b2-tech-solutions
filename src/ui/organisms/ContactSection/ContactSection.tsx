@@ -17,11 +17,11 @@ const ContactSection: React.FC<ContactProps> = (props) => {
   return (
     <Section>
       <Wrapper>
-        <div className="grid md:grid-cols-[2fr_1fr] items-start mt-24">
+        <div className="grid md:grid-cols-[1fr_1fr] lg:grid-cols-[2fr_1fr] gap-x-10 items-start mt-24 mx-4">
           <div className="bg-black">
             <div className="flex flex-col items-start justify-center my-20 font-bold">
-              <h1 className="text-9xl">GET IN</h1>
-              <div className="self-center text-9xl">
+              <h1 className="text-7xl md:text-9xl">GET IN</h1>
+              <div className="self-center text-7xl md:text-9xl">
                 <h1 className="green-text">TOUCH</h1>
               </div>
             </div>
