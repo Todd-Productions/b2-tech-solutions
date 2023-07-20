@@ -2,10 +2,11 @@
 
 .image-card {
   position: relative;
+  width: 604px;
+  height: 586px;
   max-width: 100%;
   max-height: 100%;
-  width: 754px;
-  height: 736px;
+  margin: 0 auto;
 }
 
 .image-card-img {
