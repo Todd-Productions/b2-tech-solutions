@@ -9,8 +9,50 @@
   ],
   "jobs": [
     {
+      "title": "Sailpoint Technical Screener",
+      "timeline": "2022 - Present",
+      "company": "Apex Systems",
+      "bulletPoints": [
+        "Screened a total of 28 candidates for two different projects, one with Anthem Health Insurance and one for California Coast Credit Union."
+      ],
+      "img": "https://source.unsplash.com/random",
+      "excerpt": "Apex Systems, Glen Allen, VA"
+    },
+    {
+      "title": "SAP IDM Architect",
+      "timeline": "2021 - Present",
+      "company": "B² TECHNICAL SERVICES",
+      "bulletPoints": [
+        "Worked with SAP IDM at Westinghouse (client) to address an unreliable identity management system with poor user experience following the early exit of a previous development team.",
+        "Revamped the entire system and resolved outstanding issues within six months.",
+        "Transformed development environments and brought the system to achieve stakeholder vision."
+      ],
+      "img": "https://source.unsplash.com/random",
+      "excerpt": "B² TECHNICAL SERVICES, Pittsburg, PA / Sylvania, OH"
+    },
+    {
+      "title": "Senior Technical Consultant, SailPoint Identity IQ",
+      "timeline": "2020",
+      "company": "S3",
+      "bulletPoints": [
+        "Leveraged Postman API developer to write code that allowed the Identity IQ system to provision information on user accounts to various systems, ensuring certain users had access to specific systems. Designed API calls that would execute whenever there was a change in identity-based information in the system to streamline capabilities."
+      ],
+      "img": "https://source.unsplash.com/random",
+      "excerpt": "S3, Alpharetta, GA / Portland, ME"
+    },
+    {
+      "title": "Senior SailPoint Identity IQ Consultant",
+      "timeline": "2019 - 2020",
+      "company": "INTEGRAL PARTNERS",
+      "bulletPoints": [
+        "Leveraged Postman API developer to write code that allowed the Identity IQ system to provision information on user accounts to various systems, ensuring certain users had access to specific systems. Designed API calls that would execute whenever there was a change in identity-based information in the system to streamline capabilities."
+      ],
+      "img": "https://source.unsplash.com/random",
+      "excerpt": "Integral Partners, Boulder, CO / Boise, ID"
+    },
+    {
       "title": "Senior Consultant",
-      "timeline": "Aug 2017 - Mar 2019",
+      "timeline": "2017 - 2019",
       "company": "Inventy NA, Inc.",
       "bulletPoints": [
         "SAP ID Senior Developer Consultant",
@@ -19,21 +61,19 @@
       "img": "https://source.unsplash.com/random",
       "excerpt": "INVENTY NORTH AMERICA, INC., JERSEY CITY, NJ / MONTRÉAL, QUÉBEC, CANADA"
     },
-
     {
-      "title": "Developer Consultant",
-      "timeline": "Apr 2016 - Jul 2017",
+      "title": "SAP IDM Developer Consultant",
+      "timeline": "2016 - 2017",
       "company": "Coke One North America",
       "bulletPoints": [
-        "SAP IDM Developer Consultant",
-        "IT Services Corporation servicing Coca-Cola bottlers in the United States."
+        "Designed solutions to ensure users received approvals for rights and privileges promptly, resolving logjammed database access issues for thousands of end users."
       ],
       "img": "https://source.unsplash.com/random",
-      "excerpt": "INVENTY NORTH AMERICA, INC., JERSEY CITY, NJ / MONTRÉAL, QUÉBEC, CANADA"
+      "excerpt": "COKE ONE NORTH AMERICA, Atlanta, GA"
     },
     {
       "title": "Owner",
-      "timeline": "Nov 2014 - Mar 2016",
+      "timeline": "2014 - 2016",
       "company": "Tutor Doctor",
       "bulletPoints": [
         "Owner / Senior Education Consultant",
@@ -44,7 +84,7 @@
     },
     {
       "title": "Senior Consultant",
-      "timeline": "Jul 2014 - Oct 2014",
+      "timeline": "2013 - 2014",
       "company": "Commercium Technology, Inc",
       "bulletPoints": [
         "SAP Identify Management Developer",
@@ -55,7 +95,7 @@
     },
     {
       "title": "Administrator",
-      "timeline": "Oct 2008 - May 2013",
+      "timeline": "2008 - 2013",
       "company": "First Solar",
       "bulletPoints": [
         "Identity and Access Management Administrator",
@@ -66,7 +106,7 @@
     },
     {
       "title": "Support Technician",
-      "timeline": "MAY 2007 - OCT 2008",
+      "timeline": "2007 - 2008",
       "company": "Faurecia Exhaust Systems",
       "bulletPoints": [
         "Desktop/Network Support Technician",

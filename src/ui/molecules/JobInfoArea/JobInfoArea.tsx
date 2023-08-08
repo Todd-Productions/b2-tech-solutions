@@ -16,7 +16,7 @@ const JobInfoArea: React.FC<JobInfoProps> = (props) => {
     <Section>
       <div className="mb-8 md:mb-32 md:mx-20">
         <div className="grid lg:grid-cols-[1fr_2fr] text-base mb-14">
-          <div>
+          <div className="mr-4">
             <SectionSubHeading>{title}</SectionSubHeading>
             <p>{timeline}</p>
             <p className="italic">{company}</p>
