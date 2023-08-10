@@ -13,7 +13,6 @@ export interface ImageCardProps {
 
 const ImageCard: React.FC<ImageCardProps> = (props) => {
   const { card } = props
-  console.log(card)
   return (
     <div className="image-card">
       <Link href={card.projectLink}>

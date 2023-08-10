@@ -13,6 +13,8 @@ const AboutPage = () => (
     aboutSubheading={data.subtitle}
     aboutImg={data.aboutImg}
     aboutDescription={data.aboutDescription}
+    educationHeader={data.educationHeader}
+    educationDescription={data.educationDescription}
     connectDescription={data.connectDescription}
     jobs={data.jobs}
   />

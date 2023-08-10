@@ -12,6 +12,8 @@ export interface AboutProps extends DefaultProps {
   aboutSubheading: string
   aboutImg: UrlType
   aboutDescription: string[]
+  educationHeader: string
+  educationDescription: string
   jobs: IJobInfo[]
   connectDescription: string[]
 }
@@ -22,6 +24,8 @@ const AboutTemplate: React.FC<AboutProps> = (props) => {
     aboutSubheading,
     aboutImg,
     aboutDescription,
+    educationDescription,
+    educationHeader,
     jobs,
     hireMeLink,
     connectDescription,
@@ -31,6 +35,8 @@ const AboutTemplate: React.FC<AboutProps> = (props) => {
       <AboutSection
         header={aboutHeading}
         subHeader={aboutSubheading}
+        educationHeader={educationHeader}
+        education={educationDescription}
         img={aboutImg}
         description={aboutDescription}
       />
