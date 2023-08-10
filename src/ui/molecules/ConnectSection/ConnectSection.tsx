@@ -8,18 +8,21 @@ import "./connect.css"
 import { INavLink } from "../../../types"
 
 export interface ConnectProps {
-  title?: string
+  header?: string
   description: string[]
   hireLink: INavLink
 }
 
 const ConnectSection: React.FC<ConnectProps> = (props) => {
-  const { title, description, hireLink } = { title: "let's connect", ...props }
+  const { header, description, hireLink } = {
+    header: "let's connect",
+    ...props,
+  }
   return (
     <Section>
       <div className="connect-container text-center md:mb-24">
         <SectionHeading>
-          {title?.split(" ")[0]} <span className="green-heading">connect</span>
+          {header?.split(" ")[0]} <span className="green-heading">connect</span>
         </SectionHeading>
         <div className="mb-6 md:mb-10">
           {description.map((line) => (

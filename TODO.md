@@ -1,12 +1,5 @@
-# Atoms
-
-# Molecules
-
-# Organisms
-
-# Templates
-
-# Pages
+# Fixes
+- [ ] Home boxes overflow
 
 # Misc.
 - [ ] Message sent confirmation
