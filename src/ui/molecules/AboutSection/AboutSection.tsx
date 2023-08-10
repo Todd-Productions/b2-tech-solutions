@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "next/image"
+import slugify from "slugify"
 
 import {
   Section,
@@ -15,7 +16,7 @@ export interface AboutProps {
   header: string
   subHeader: string
   img: UrlType
-  description: string
+  description: string[]
 }
 
 const AboutSection: React.FC<AboutProps> = (props) => {
@@ -44,7 +45,9 @@ const AboutSection: React.FC<AboutProps> = (props) => {
           <div className="pl-8 mt-32">
             <SectionSubHeading textGreen>{subHeader}</SectionSubHeading>
             <p className="my-12 text-black-500 text-lg md:text-2xl text-content ">
-              {description}
+              {description.map((point, idx) => (
+                <p key={slugify(String(idx))}>{point}</p>
+              ))}
             </p>
             <div className="resume-btn">
               <Button>DOWNLOAD RESUME</Button>

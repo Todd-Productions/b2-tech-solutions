@@ -29,7 +29,6 @@
     transform: translateY(0);
     color: var(--tp-color-white);
     padding: 35px 10px 0 35px;
-    font-size: 1.5rem;
     font-weight: 600;
     text-shadow: 2px 3px 5px rgba(0, 0, 0, 1);
   }
@@ -46,7 +45,6 @@
       color: var(--tp-color-white);
       font-weight: 900;
       text-transform: uppercase;
-      font-size: 3rem;
       padding: 15px 25px;
       position: absolute;
       visibility: hidden;

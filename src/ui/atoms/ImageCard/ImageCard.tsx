@@ -13,6 +13,7 @@ export interface ImageCardProps {
 
 const ImageCard: React.FC<ImageCardProps> = (props) => {
   const { card } = props
+  console.log(card)
   return (
     <div className="image-card">
       <Link href={card.projectLink}>
@@ -22,7 +23,11 @@ const ImageCard: React.FC<ImageCardProps> = (props) => {
           alt="project"
           fill
         />
-        <div className="show-text">{card.excerpt}</div>
+        <div className="show-text text-2xl">
+          {card.excerpt.map((excerpt) => (
+            <p className="mb-2">{excerpt}</p>
+          ))}
+        </div>
         <div className="image-card-icon show-icon">
           <Icon icon={faArrowRight} />
           <div className="image-card-arrow2">

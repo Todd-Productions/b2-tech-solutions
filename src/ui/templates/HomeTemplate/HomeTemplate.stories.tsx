@@ -20,22 +20,22 @@ export const Default: Story = {
     jobCards: [
       {
         img: "https://source.unsplash.com/random",
-        excerpt: "upgrade of sap idm migration and from v7.1 to v8.0",
+        excerpt: ["upgrade of sap idm migration and from v7.1 to v8.0"],
         projectLink: "/",
       },
       {
         img: "https://source.unsplash.com/random",
-        excerpt: "idm implementation for manufacturing company",
+        excerpt: ["idm implementation for manufacturing company"],
         projectLink: "/",
       },
       {
         img: "https://source.unsplash.com/random",
-        excerpt: "upgrade of sap idm migration and from v7.1 to v8.0",
+        excerpt: ["upgrade of sap idm migration and from v7.1 to v8.0"],
         projectLink: "/",
       },
       {
         img: "https://source.unsplash.com/random",
-        excerpt: "idm implementation for manufacturing company",
+        excerpt: ["idm implementation for manufacturing company"],
         projectLink: "/",
       },
     ],

@@ -32,10 +32,10 @@ const WorkSection: React.FC<WorkProps> = (props) => {
         </div>
 
         <div className="flex justify-center justify-center items-center flex-wrap gap-8 mt-10">
-          {cards.map((card) => (
+          {cards.map((card, idx) => (
             <div
               className="justify-self-center w-11/12 lg:w-auto"
-              key={slugify(card.excerpt)}
+              key={slugify(String(idx))}
             >
               <ImageCard card={card} />
             </div>

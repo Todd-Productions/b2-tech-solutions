@@ -11,7 +11,7 @@ export interface AboutProps extends DefaultProps {
   aboutHeading: string
   aboutSubheading: string
   aboutImg: UrlType
-  aboutDescription: string
+  aboutDescription: string[]
   jobs: IJobInfo[]
   connectDescription: string[]
 }
