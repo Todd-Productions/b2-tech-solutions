@@ -1,6 +1,7 @@
 # Fixes
 - [ ] Home boxes overflow
 - [ ] home and about reactnodes
+- [ ] adjust getYears
 
 # Misc.
 - [ ] Message sent confirmation

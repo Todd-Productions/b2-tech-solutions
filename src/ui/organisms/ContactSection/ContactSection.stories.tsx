@@ -14,6 +14,5 @@ type Story = StoryObj<typeof ContactSection>
 export const Default: Story = {
   args: {
     email: "email@email.com",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
 }
