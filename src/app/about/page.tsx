@@ -9,6 +9,8 @@ import data from "../../data/about.json"
 const AboutPage = () => (
   <AboutTemplate
     {...getDefaultProps()}
+    aboutHeading={data.title}
+    aboutSubheading={data.subtitle}
     aboutImg={data.aboutImg}
     aboutDescription={data.aboutDescription}
     connectDescription={data.connectDescription}

@@ -1,5 +1,6 @@
 # Fixes
 - [ ] Home boxes overflow
+- [ ] home and about reactnodes
 
 # Misc.
 - [ ] Message sent confirmation

@@ -12,18 +12,20 @@ import { UrlType } from "../../../types"
 import "./about.css"
 
 export interface AboutProps {
+  header: string
+  subHeader: string
   img: UrlType
   description: string
 }
 
 const AboutSection: React.FC<AboutProps> = (props) => {
-  const { img, description } = props
+  const { img, description, header, subHeader } = props
 
   return (
     <Section>
       <Wrapper>
         <div className="text-center mt-20 mb-12">
-          <SectionHeading>about.</SectionHeading>
+          <SectionHeading>{header}</SectionHeading>
         </div>
         <div className="grid gap-x-24 md:mb-20 justify-center md:grid-cols-[1fr_1fr]">
           <div className="mx-10 md:ml-12">
@@ -40,7 +42,7 @@ const AboutSection: React.FC<AboutProps> = (props) => {
           </div>
 
           <div className="pl-8 mt-32">
-            <SectionSubHeading textGreen>Who&apos;s Brandon?</SectionSubHeading>
+            <SectionSubHeading textGreen>{subHeader}</SectionSubHeading>
             <p className="my-12 text-black-500 text-lg md:text-2xl text-content ">
               {description}
             </p>
