@@ -16,11 +16,8 @@ const ExperienceSection: React.FC<ExperienceProps> = (props) => {
   const getJobYears = (data: ExperienceProps) => {
     const uniqueYears: string[] = []
     data.jobs.forEach((job) => {
-      if (
-        uniqueYears[uniqueYears.length - 1] !==
-        job.timeline.split(" - ")[0].split(" ")[1]
-      )
-        uniqueYears.push(job.timeline.split(" - ")[0].split(" ")[1])
+      if (uniqueYears[uniqueYears.length - 1] !== job.timeline.split(" ")[1])
+        uniqueYears.push(job.timeline.split(" ")[1])
     })
     return uniqueYears
   }
@@ -30,7 +27,7 @@ const ExperienceSection: React.FC<ExperienceProps> = (props) => {
       <Wrapper>
         <div className="grid md:grid-cols-[250px_1fr] lg:grid-cols-[375px_1fr] mx-4 md:mx-0">
           <div className="hidden md:block">
-            <div className="sticky top-40 pl-4">
+            <div className="sticky top-40 pl-4 z-10">
               <ExperienceSidebar years={getJobYears(props)} />
             </div>
           </div>

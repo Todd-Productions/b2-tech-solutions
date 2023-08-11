@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "next/image"
+import slugify from "slugify"
 
 import {
   Section,
@@ -12,18 +13,23 @@ import { UrlType } from "../../../types"
 import "./about.css"
 
 export interface AboutProps {
+  header: string
+  subHeader: string
+  educationHeader: string
+  education: string
   img: UrlType
-  description: string
+  description: string[]
 }
 
 const AboutSection: React.FC<AboutProps> = (props) => {
-  const { img, description } = props
+  const { img, description, header, education, educationHeader, subHeader } =
+    props
 
   return (
     <Section>
       <Wrapper>
         <div className="text-center mt-20 mb-12">
-          <SectionHeading>about.</SectionHeading>
+          <SectionHeading>{header}</SectionHeading>
         </div>
         <div className="grid gap-x-24 md:mb-20 justify-center md:grid-cols-[1fr_1fr]">
           <div className="mx-10 md:ml-12">
@@ -40,13 +46,23 @@ const AboutSection: React.FC<AboutProps> = (props) => {
           </div>
 
           <div className="pl-8 mt-32">
-            <SectionSubHeading textGreen>Who&apos;s Brandon?</SectionSubHeading>
-            <p className="my-12 text-black-500 text-lg md:text-2xl text-content ">
-              {description}
-            </p>
-            <div className="resume-btn">
-              <Button>DOWNLOAD RESUME</Button>
+            <SectionSubHeading textGreen>{subHeader}</SectionSubHeading>
+            <div className="my-12 text-black-500 text-lg md:text-2xl text-content ">
+              {description.map((point, idx) => (
+                <p key={slugify(String(idx))}>{point}</p>
+              ))}
             </div>
+            <SectionSubHeading textGreen>{educationHeader}</SectionSubHeading>
+            <div className="my-12 text-black-500 text-lg md:text-2xl text-content ">
+              <p>{education}</p>
+            </div>
+            <a
+              href="/pdfs/brandon-a-bollin.pdf"
+              target="_blank"
+              className="resume-btn"
+            >
+              <Button>DOWNLOAD RESUME</Button>
+            </a>
           </div>
         </div>
       </Wrapper>

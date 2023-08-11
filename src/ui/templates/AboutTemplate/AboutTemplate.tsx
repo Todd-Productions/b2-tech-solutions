@@ -8,18 +8,38 @@ import { DefaultProps, getMainLayoutProps } from "../HomeTemplate/HomeTemplate"
 import { UrlType, IJobInfo } from "../../../types"
 
 export interface AboutProps extends DefaultProps {
+  aboutHeading: string
+  aboutSubheading: string
   aboutImg: UrlType
-  aboutDescription: string
+  aboutDescription: string[]
+  educationHeader: string
+  educationDescription: string
   jobs: IJobInfo[]
   connectDescription: string[]
 }
 
 const AboutTemplate: React.FC<AboutProps> = (props) => {
-  const { aboutImg, aboutDescription, jobs, hireMeLink, connectDescription } =
-    props
+  const {
+    aboutHeading,
+    aboutSubheading,
+    aboutImg,
+    aboutDescription,
+    educationDescription,
+    educationHeader,
+    jobs,
+    hireMeLink,
+    connectDescription,
+  } = props
   return (
     <MainLayout {...getMainLayoutProps(props)}>
-      <AboutSection img={aboutImg} description={aboutDescription} />
+      <AboutSection
+        header={aboutHeading}
+        subHeader={aboutSubheading}
+        educationHeader={educationHeader}
+        education={educationDescription}
+        img={aboutImg}
+        description={aboutDescription}
+      />
       <ExperienceSection jobs={jobs} />
       <ConnectSection hireLink={hireMeLink} description={connectDescription} />
     </MainLayout>

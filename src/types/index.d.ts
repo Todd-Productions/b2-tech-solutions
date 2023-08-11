@@ -18,7 +18,7 @@ export interface ISocialLinks {
 // ImageCard - Home Page
 export interface IImageCard {
   img: UrlType
-  excerpt: string
+  excerpt: string[]
   projectLink: UrlType
 }
 

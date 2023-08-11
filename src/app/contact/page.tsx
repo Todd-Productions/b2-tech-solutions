@@ -25,8 +25,9 @@ const handleSubmit = async (formData: any) => {
 const ContactPage = () => (
   <ContactTemplate
     {...getDefaultProps()}
+    title={data.title}
+    phone={data.phone}
     email={data.email}
-    description={data.description}
     handleSubmit={handleSubmit}
   />
 )

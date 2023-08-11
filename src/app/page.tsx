@@ -28,8 +28,10 @@ const HomePage = () => {
     <HomeTemplate
       {...getDefaultProps()}
       bannerImg={data.bannerImage}
+      workTitle={data.workTitle}
       workDescription={data.workDescription}
       jobCards={data.jobCards}
+      connectTitle={data.connectTitle}
       connectDescription={data.connectDescription}
     />
   ) : (

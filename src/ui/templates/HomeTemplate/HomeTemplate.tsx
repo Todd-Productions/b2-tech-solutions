@@ -13,8 +13,10 @@ export interface DefaultProps {
 
 export interface HomeProps extends DefaultProps {
   bannerImg: UrlType
+  workTitle: string
   workDescription: string
   jobCards: IImageCard[]
+  connectTitle: string
   connectDescription: string[]
 }
 
@@ -29,16 +31,26 @@ const HomeTemplate: React.FC<HomeProps> = (props) => {
     hireMeLink,
     jobCards,
     bannerImg,
+    workTitle,
     workDescription,
+    connectTitle,
     connectDescription,
   } = props
   return (
     <MainLayout {...getMainLayoutProps(props)}>
       <Hero img={bannerImg as string} />
       <div id="work">
-        <WorkSection description={workDescription} cards={jobCards} />
+        <WorkSection
+          header={workTitle}
+          description={workDescription}
+          cards={jobCards}
+        />
       </div>
-      <ConnectSection description={connectDescription} hireLink={hireMeLink} />
+      <ConnectSection
+        header={connectTitle}
+        description={connectDescription}
+        hireLink={hireMeLink}
+      />
     </MainLayout>
   )
 }

@@ -19,7 +19,7 @@ const JobImageCard: React.FC<JobImageProps> = (props) => {
         alt="job-image"
         fill
       />
-      <p className="job-card-excerpt p-4 m-4 text-black-500 md:text-xl">
+      <p className="job-card-excerpt p-4 m-4 text-black-500 md:text-xl uppercase">
         {excerpt}
       </p>
     </div>
