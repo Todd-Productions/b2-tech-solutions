@@ -15,15 +15,12 @@ import "./about.css"
 export interface AboutProps {
   header: string
   subHeader: string
-  educationHeader: string
-  education: string
   img: UrlType
   description: string[]
 }
 
 const AboutSection: React.FC<AboutProps> = (props) => {
-  const { img, description, header, education, educationHeader, subHeader } =
-    props
+  const { img, description, header, subHeader } = props
 
   return (
     <Section>
@@ -51,10 +48,6 @@ const AboutSection: React.FC<AboutProps> = (props) => {
               {description.map((point, idx) => (
                 <p key={slugify(String(idx))}>{point}</p>
               ))}
-            </div>
-            <SectionSubHeading textGreen>{educationHeader}</SectionSubHeading>
-            <div className="my-12 text-black-500 text-lg md:text-2xl text-content ">
-              <p>{education}</p>
             </div>
             <a
               href="/pdfs/brandon-a-bollin.pdf"

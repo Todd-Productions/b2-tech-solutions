@@ -1,11 +1,12 @@
 import React from "react"
 
-import { AboutSection, ConnectSection } from "../../molecules"
+import { AboutSection, ConnectSection, EducationSection } from "../../molecules"
 import { MainLayout, ExperienceSection } from "../../organisms"
 import { DefaultProps, getMainLayoutProps } from "../HomeTemplate/HomeTemplate"
 
 // @types
 import { UrlType, IJobInfo } from "../../../types"
+import { IEducation } from "../../molecules/EducationSection/EducationSection"
 
 export interface AboutProps extends DefaultProps {
   aboutHeading: string
@@ -13,7 +14,7 @@ export interface AboutProps extends DefaultProps {
   aboutImg: UrlType
   aboutDescription: string[]
   educationHeader: string
-  educationDescription: string
+  educationHistory: IEducation[]
   jobs: IJobInfo[]
   connectDescription: string[]
 }
@@ -24,7 +25,7 @@ const AboutTemplate: React.FC<AboutProps> = (props) => {
     aboutSubheading,
     aboutImg,
     aboutDescription,
-    educationDescription,
+    educationHistory,
     educationHeader,
     jobs,
     hireMeLink,
@@ -35,12 +36,13 @@ const AboutTemplate: React.FC<AboutProps> = (props) => {
       <AboutSection
         header={aboutHeading}
         subHeader={aboutSubheading}
-        educationHeader={educationHeader}
-        education={educationDescription}
         img={aboutImg}
         description={aboutDescription}
       />
       <ExperienceSection jobs={jobs} />
+
+      <EducationSection header={educationHeader} education={educationHistory} />
+
       <ConnectSection hireLink={hireMeLink} description={connectDescription} />
     </MainLayout>
   )
