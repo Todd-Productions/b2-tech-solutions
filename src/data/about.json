@@ -8,6 +8,16 @@
   ],
   "educationHeader": "Education",
   "educationDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis tincidunt ligula, sit amet sagittis elit. Curabitur et velit a felis dictum elementum.",
+  "education": [
+    {
+      "location": "Bachelor of Science in Technology",
+      "bulletPoints": ["Bachelor of Science in Technology", "GPA: 3.87/4.0"]
+    },
+    {
+      "location": "Owens Community College",
+      "bulletPoints": ["Associates of Applied Business", "GPA: 3.76/4.0"]
+    }
+  ],
   "connectTitle": "Let's Connect",
   "connectDescription": [
     "Experienced SAP IDM professional and MSCE-certified expert.",
@@ -15,70 +25,72 @@
   ],
   "jobs": [
     {
-      "title": "Senior Consultant",
-      "timeline": "Aug 2017 - Mar 2019",
-      "company": "Inventy NA, Inc.",
+      "title": "Sailpoint Technical Screener",
+      "timeline": "2022 - Present",
+      "company": "APEX Systems",
+      "description": "Engaged as a technical expert to work on a recruiting project involving hiring several developers for a healthcare organization and a credit union. Evaluated candidates and provided recommendations for hiring based on skills.",
       "bulletPoints": [
-        "SAP ID Senior Developer Consultant",
-        "SAP Consulting firm, Global HQ - Nice, France, serving clients in Canada, France, Switzerland and beyond."
+        "Screened a total of 28 candidates for two different projects, one with Anthem Health Insurance and one for California Coast Credit Union."
       ],
       "img": "https://source.unsplash.com/random",
-      "excerpt": "INVENTY NORTH AMERICA, INC., JERSEY CITY, NJ / MONTRÉAL, QUÉBEC, CANADA"
+      "excerpt": "Glen Allen, Virginia"
     },
     {
-      "title": "Developer Consultant",
-      "timeline": "Apr 2016 - Jul 2017",
+      "title": "SAP IDM Architect",
+      "timeline": "2021 - Present",
+      "company": "B2 Technical Services",
+      "description": "Rebuilt Westinghouse's entire identity lifecycle process, including onboarding, maintenance, and offboarding. Introduced a new cloud-based HRIS system, SAP SuccessFactors Employee Central, gaining recognition for the smoothest systems migration in company history. Streamlined SAP capabilities, and built out robust QA and DEV environments.",
+      "bulletPoints": [
+        "Worked with SAP IDM at Westinghouse (client) to address an unreliable identity management system with poor user experience following the early exit of a previous development team.",
+        "Revamped the entire system and resolved outstanding issues within six months.",
+        "Transformed development environments and brought the system to achieve stakeholder vision."
+      ],
+      "img": "https://source.unsplash.com/random",
+      "excerpt": "Pittsburg, Pennsylvania / Sylvania, Ohio"
+    },
+    {
+      "title": "Senior Technical Consultant, Sailpoint Identity IQ",
+      "timeline": "2020 ",
+      "company": "S3",
+      "description": "Engaged as a senior consultant to support the development of the SailPoint Identity IQ platform, with a primary mandate to develop connections between the IIQ identity systems and a company that primarily dealt with fleet credit card systems. Connected business spend management system and SAP commissions to track incentive compensation for the sales force. Worked on Astronomer, a software that ran on the Graph QL API, connecting IIQ with the Cherwell Helpdesk Ticketing System, despite never working with the technology previously.",
+      "bulletPoints": [
+        "Leveraged Postman API developer to write code that allowed the Identity IQ system to provision information on user accounts to various systems, ensuring certain users had access to specific systems. Designed API calls that would execute whenever there was a change in identity-based information in the system to streamline capabilities."
+      ],
+      "img": "https://source.unsplash.com/random",
+      "excerpt": "Alpharetta, Georgia / Portland, Maine"
+    },
+    {
+      "title": "Senior Sailpoint Identity IQ Consultant",
+      "timeline": "2019 - 2020",
+      "company": "Integral Partners",
+      "description": "Challenged with designing new business processes within the existing Identity IQ system and integrating connections between IIQ and SAP SuccessFactors, SAP S4 HANA database, Fiori, and Cherwell IT ticketing system. Migrated all capabilities from Identity IQ version 7.3 to the new 8.0 installation, with a new installation of Identity IQ and SAP going live in one weekend.",
+      "bulletPoints": [
+        "Led an on-premise team of 30 during Super Bowl weekend 2020 to build out and test new connections, ensuring 100% capability and uptime by Monday morning."
+      ],
+      "img": "https://source.unsplash.com/random",
+      "excerpt": "Boulder, Colorado / Boise, Idaho"
+    },
+    {
+      "title": "Senior SAP IDM Developer Consultant",
+      "timeline": "2017 - 2019",
+      "company": "Inventy North America",
+      "description": "Hired by a company that provided ERP consulting and identity management services, with a focus on expanding organizational presence in North America. Engaged as a US-based resource supporting a branch in Montreal. Worked with global clients, including PharmaScience, CMA CGM, Galderma, and Constellium, providing developer and architect team leadership for SAP IDM. Collaborated with resources in Marseille, France at the corporate headquarters of CMA CGM, one of the largest container shipping companies in the world. Traveled to Quebec, Canada and Paris &amp; Marseille, France on a regular basis.",
+      "bulletPoints": [
+        "Built an identity management platform for a client at PharmaScience from scratch, including building it in a development stage and bringing it into quality assurance before go-live in production. Solution provisioned and maintained client records for thousands of employees."
+      ],
+      "img": "https://source.unsplash.com/random",
+      "excerpt": "Jersey City, New Jersey / Montreal, Quebec, Canada"
+    },
+    {
+      "title": "SAP IDM Developer Consultant",
+      "timeline": "2016 - 2017",
       "company": "Coke One North America",
+      "description": "Stepped into an existing project as a high-level resource, introducing solutions to assign users basic rights based on specific company connections, logically driving service delivery to ensure data security. Conducted extensive user audits for security compliance, ensuring rules compliance.",
       "bulletPoints": [
-        "SAP IDM Developer Consultant",
-        "IT Services Corporation servicing Coca-Cola bottlers in the United States."
+        "Designed solutions to ensure users received approvals for rights and privileges promptly, resolving logjammed database access issues for thousands of end users."
       ],
       "img": "https://source.unsplash.com/random",
-      "excerpt": "COKE ONE NORTH AMERICA, Atlanta, GA"
-    },
-    {
-      "title": "Owner",
-      "timeline": "Nov 2014 - Mar 2016",
-      "company": "Tutor Doctor",
-      "bulletPoints": [
-        "Owner / Senior Education Consultant",
-        "One-on-one supplementary education and ACT test preparations company."
-      ],
-      "img": "https://source.unsplash.com/random",
-      "excerpt": "B. AVERY ENTERPRISES, INC., DBA TUTOR DOCTOR OF GREATER TOLEDO, SYLVANIA, OH"
-    },
-    {
-      "title": "Senior Consultant",
-      "timeline": "Jul 2014 - Oct 2014",
-      "company": "Commercium Technology, Inc",
-      "bulletPoints": [
-        "SAP Identify Management Developer",
-        "Identity & access management, data management & collaboration, and data security consulting firm."
-      ],
-      "img": "https://source.unsplash.com/random",
-      "excerpt": "COMMERCIUM TECHNOLOGY, INC., RUMSON, NJ"
-    },
-    {
-      "title": "Administrator",
-      "timeline": "Oct 2008 - May 2013",
-      "company": "First Solar",
-      "bulletPoints": [
-        "Identity and Access Management Administrator",
-        "Designer and manufacturer of solar panels for commercial power grid and residential energy production."
-      ],
-      "img": "https://source.unsplash.com/random",
-      "excerpt": "FIRST SOLAR, INC., PERRYSBURG, OH"
-    },
-    {
-      "title": "Support Technician",
-      "timeline": "MAY 2007 - OCT 2008",
-      "company": "Faurecia Exhaust Systems",
-      "bulletPoints": [
-        "Desktop/Network Support Technician",
-        "Automotive supplier, main technical hub for Faurecia Exhaust for all of North America - 200+ users supported."
-      ],
-      "img": "https://source.unsplash.com/random",
-      "excerpt": "FAURECIA EXHAUST SYSTEMS, TOLEDO, OH"
+      "excerpt": "Atlanta, Georgia"
     }
   ]
 }
