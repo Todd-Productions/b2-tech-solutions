@@ -14,7 +14,7 @@ const AboutPage = () => (
     aboutImg={data.aboutImg}
     aboutDescription={data.aboutDescription}
     educationHeader={data.educationHeader}
-    educationDescription={data.educationDescription}
+    educationHistory={data.education}
     connectDescription={data.connectDescription}
     jobs={data.jobs}
   />

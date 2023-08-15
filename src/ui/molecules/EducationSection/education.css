@@ -1,0 +1,7 @@
+.education-container {
+  max-width: 750px;
+}
+
+.education-container div:not(:last-child) {
+  margin-bottom: 2rem;
+}

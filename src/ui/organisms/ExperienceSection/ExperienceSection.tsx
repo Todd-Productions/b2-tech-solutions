@@ -16,8 +16,8 @@ const ExperienceSection: React.FC<ExperienceProps> = (props) => {
   const getJobYears = (data: ExperienceProps) => {
     const uniqueYears: string[] = []
     data.jobs.forEach((job) => {
-      if (uniqueYears[uniqueYears.length - 1] !== job.timeline.split(" ")[1])
-        uniqueYears.push(job.timeline.split(" ")[1])
+      if (uniqueYears[uniqueYears.length - 1] !== job.timeline.split(" - ")[0])
+        uniqueYears.push(job.timeline.split(" - ")[0])
     })
     return uniqueYears
   }

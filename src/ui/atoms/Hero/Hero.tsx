@@ -12,7 +12,9 @@ const Hero: React.FC<HeroProps> = (props) => {
   const { img, children } = {
     children: (
       <>
-        <div>b2 tech</div>
+        <div>
+          b<sup>2</sup> tech
+        </div>
         <div>solutions</div>
       </>
     ),
