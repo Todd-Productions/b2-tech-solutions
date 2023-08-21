@@ -20,7 +20,7 @@ const ConnectSection: React.FC<ConnectProps> = (props) => {
   }
   return (
     <Section>
-      <div className="connect-container text-center md:mb-24">
+      <div className="connect-container text-center mx-4 md:mb-24">
         <SectionHeading>
           {header?.split(" ")[0]} <span className="green-heading">connect</span>
         </SectionHeading>

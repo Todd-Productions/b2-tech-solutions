@@ -17,7 +17,9 @@ const Footer: React.FC<FooterProps> = (props) => {
       <Wrapper>
         <div className="footer flex justify-between items-center md:py-8 py-4 text-black-500 border-t-4 border-black-500">
           <div className="mb-2">
-            <p>© B2 Tech Solutions 2023</p>
+            <p>
+              © B<sup>2</sup> Tech Solutions 2023
+            </p>
           </div>
           <div className="flex flex-col md:flex-row items-center">
             {links.map((link) => (

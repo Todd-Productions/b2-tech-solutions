@@ -19,7 +19,9 @@ const JobInfoArea: React.FC<JobInfoProps> = (props) => {
           <div className="mr-4">
             <SectionSubHeading>{title}</SectionSubHeading>
             <p>{timeline}</p>
-            <p className="italic">{company}</p>
+            <p className="italic">
+              <div dangerouslySetInnerHTML={{ __html: company as string }} />
+            </p>
           </div>
           <div>
             <ul>
