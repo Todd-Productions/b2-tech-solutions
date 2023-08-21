@@ -37,7 +37,7 @@
     {
       "title": "SAP IDM Architect",
       "timeline": "2021 - Present",
-      "company": "B2 Technical Services",
+      "company": "B<sup>2</sup> Technical Services",
       "description": "Rebuilt Westinghouse's entire identity lifecycle process, including onboarding, maintenance, and offboarding. Introduced a new cloud-based HRIS system, SAP SuccessFactors Employee Central, gaining recognition for the smoothest systems migration in company history. Streamlined SAP capabilities, and built out robust QA and DEV environments.",
       "bulletPoints": [
         "Worked with SAP IDM at Westinghouse (client) to address an unreliable identity management system with poor user experience following the early exit of a previous development team.",

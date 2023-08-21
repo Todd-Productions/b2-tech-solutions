@@ -1,3 +1,4 @@
+import { ReactNode } from "react"
 import { UrlObject } from "url"
 
 export type UrlType = UrlObject | string
@@ -26,7 +27,7 @@ export interface IImageCard {
 export interface IJobInfo {
   title: string
   timeline: string
-  company: string
+  company: ReactNode
   bulletPoints: string[]
   img: UrlType
   excerpt: string

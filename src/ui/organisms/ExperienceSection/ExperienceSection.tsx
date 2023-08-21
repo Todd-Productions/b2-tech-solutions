@@ -33,7 +33,7 @@ const ExperienceSection: React.FC<ExperienceProps> = (props) => {
           </div>
           <div className="pl-4">
             {jobs.map((job) => (
-              <JobInfoArea job={job} key={slugify(job.company)} />
+              <JobInfoArea job={job} key={slugify(job.company as string)} />
             ))}
           </div>
         </div>
