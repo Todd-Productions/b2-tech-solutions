@@ -1,7 +1,7 @@
 {
   "title": "About",
   "subtitle": "Who's Brandon? What is B²?",
-  "aboutImg": "https://source.unsplash.com/random",
+  "aboutImg": "/images/placeholders/who-is-brandon.jpg",
   "aboutDescription": [
     "B² Technical Solutions is a fully insured, sole proprietor LLC. As a fully insured IDM/IAM based corporation, Brandon Bollin can bring his SME background in the IDM/IAM space to your company for a fraction of the cost to hire a typical IT staffing company.",
     "Brandon has worked as a 1099 and W2 based resource for many of these companies over the years. Why pay for a middleman when one can come to B² directly?"
@@ -31,7 +31,7 @@
       "bulletPoints": [
         "Screened a total of 28 candidates for two different projects, one with Anthem Health Insurance and one for California Coast Credit Union."
       ],
-      "img": "https://source.unsplash.com/random",
+      "img": "/images/jobs/apex.jpg",
       "excerpt": "Glen Allen, Virginia"
     },
     {
@@ -55,7 +55,7 @@
       "bulletPoints": [
         "Leveraged Postman API developer to write code that allowed the Identity IQ system to provision information on user accounts to various systems, ensuring certain users had access to specific systems. Designed API calls that would execute whenever there was a change in identity-based information in the system to streamline capabilities."
       ],
-      "img": "https://source.unsplash.com/random",
+      "img": "/images/jobs/S3.jpg",
       "excerpt": "Alpharetta, Georgia / Portland, Maine"
     },
     {
@@ -66,7 +66,7 @@
       "bulletPoints": [
         "Led an on-premise team of 30 during Super Bowl weekend 2020 to build out and test new connections, ensuring 100% capability and uptime by Monday morning."
       ],
-      "img": "https://source.unsplash.com/random",
+      "img": "/images/jobs/integral-partners.jpg",
       "excerpt": "Boulder, Colorado / Boise, Idaho"
     },
     {
@@ -77,7 +77,7 @@
       "bulletPoints": [
         "Built an identity management platform for a client at PharmaScience from scratch, including building it in a development stage and bringing it into quality assurance before go-live in production. Solution provisioned and maintained client records for thousands of employees."
       ],
-      "img": "https://source.unsplash.com/random",
+      "img": "/images/jobs/inventy.jpg",
       "excerpt": "Jersey City, New Jersey / Montreal, Quebec, Canada"
     },
     {
@@ -88,7 +88,7 @@
       "bulletPoints": [
         "Designed solutions to ensure users received approvals for rights and privileges promptly, resolving logjammed database access issues for thousands of end users."
       ],
-      "img": "https://source.unsplash.com/random",
+      "img": "/images/jobs/cona.jpg",
       "excerpt": "Atlanta, Georgia"
     }
   ]

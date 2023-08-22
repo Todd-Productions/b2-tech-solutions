@@ -31,11 +31,13 @@ const ExperienceSection: React.FC<ExperienceProps> = (props) => {
               <ExperienceSidebar years={getJobYears(props)} />
             </div>
           </div>
-          <div className="pl-4">
+          <ul className="pl-4">
             {jobs.map((job) => (
-              <JobInfoArea job={job} key={slugify(job.company as string)} />
+              <li key={slugify(String(job.company))}>
+                <JobInfoArea job={job} key={slugify(job.company as string)} />
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </Wrapper>
     </Section>
