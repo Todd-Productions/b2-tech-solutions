@@ -34,6 +34,14 @@ const ImageCard: React.FC<ImageCardProps> = (props) => {
           </div>
         </div>
       </Link>
+      <div className="absolute left-5 bottom-5 show-logo">
+        <Image
+          src="/images/logo-green.svg"
+          height={50}
+          width={50}
+          alt="B2 Tech Solutions"
+        />
+      </div>
     </div>
   )
 }

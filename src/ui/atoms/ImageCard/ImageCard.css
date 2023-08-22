@@ -37,6 +37,10 @@
     display: none;
   }
 
+  .show-logo {
+    display: none;
+  }
+
   @screen md {
     .show-text {
       opacity: 0;
@@ -53,6 +57,10 @@
       display: block;
     }
 
+    .show-logo {
+      display: block;
+    }
+
     .image-card {
       width: 604px;
       height: 586px !important;
@@ -64,6 +72,18 @@
   transform: translateX(0);
   visibility: visible;
   opacity: 1;
+}
+
+.image-card:hover .show-logo {
+  visibility: visible;
+  opacity: 1;
+}
+
+.show-logo {
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  background-color: transparent;
 }
 
 .show-icon {
