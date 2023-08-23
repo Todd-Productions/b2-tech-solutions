@@ -1,7 +1,7 @@
 {
   "title": "About",
   "subtitle": "Who's Brandon? What is B²?",
-  "aboutImg": "/images/placeholders/who-is-brandon.jpg",
+  "aboutImg": "https://source.unsplash.com/random",
   "aboutDescription": [
     "B² Technical Solutions is a fully insured, sole proprietor LLC. As a fully insured IDM/IAM based corporation, Brandon Bollin can bring his SME background in the IDM/IAM space to your company for a fraction of the cost to hire a typical IT staffing company.",
     "Brandon has worked as a 1099 and W2 based resource for many of these companies over the years. Why pay for a middleman when one can come to B² directly?"
@@ -44,7 +44,7 @@
         "Revamped the entire system and resolved outstanding issues within six months.",
         "Transformed development environments and brought the system to achieve stakeholder vision."
       ],
-      "img": "https://source.unsplash.com/random",
+      "img": "/images/jobs/westinghouse.jpg",
       "excerpt": "Pittsburg, Pennsylvania / Sylvania, Ohio"
     },
     {
