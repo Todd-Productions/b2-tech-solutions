@@ -28,7 +28,7 @@ const AboutSection: React.FC<AboutProps> = (props) => {
         <div className="text-center mt-20 mb-12">
           <SectionHeading>{header}</SectionHeading>
         </div>
-        <div className="grid gap-x-24 md:mb-20 justify-center md:grid-cols-[1fr_1fr]">
+        <div className="grid gap-x-24 md:mb-20 justify-center lg:grid-cols-[1fr_1fr]">
           <div className="mx-10 md:ml-12">
             <div className="relative img-container">
               <div className="light-card" />
