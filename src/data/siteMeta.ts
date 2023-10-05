@@ -17,16 +17,16 @@ export const navLinks: INavLink[] = [
 
 export const footerLinks: INavLink[] = [
   {
-    label: "Instagram",
-    url: "/",
+    label: "Facebook",
+    url: "https://www.facebook.com/b2techOhio/",
   },
   {
     label: "Linkedin",
-    url: "/",
+    url: "https://www.linkedin.com/in/brandonbollin/",
   },
   {
-    label: "Twitter",
-    url: "/",
+    label: "X (Twitter)",
+    url: "https://twitter.com/b2techOhio",
   },
 ]
 
