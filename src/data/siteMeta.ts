@@ -25,7 +25,7 @@ export const footerLinks: INavLink[] = [
     url: "https://www.linkedin.com/in/brandonbollin/",
   },
   {
-    label: " X (Twitter)",
+    label: "X (Twitter)",
     url: "https://twitter.com/b2techOhio",
   },
 ]
