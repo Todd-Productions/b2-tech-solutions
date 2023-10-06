@@ -31,7 +31,7 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
   }
 
   return success ? (
-    <div className="p6 bg-green text-white">
+    <div className="p-6 bg-green-700 text-white text-center rounded-md mt-10">
       Thank you for contacting me. I will be in touch soon!
     </div>
   ) : (
