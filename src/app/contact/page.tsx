@@ -1,35 +1,49 @@
 "use client"
 
-import React from "react"
+import { useState } from "react"
 
-import { ContactTemplate } from "../../ui/templates"
 import getDefaultProps from "../../../utils/common"
 import data from "../../data/contact.json"
+import { ContactTemplate } from "../../ui/templates"
 
-const handleSubmit = async (formData: any) => {
-  try {
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
-    return res
-  } catch (error) {
-    console.error("Error while subitting the form:", error)
-    return error
+const ContactPage = () => {
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<undefined | string>(undefined)
+  const [success, setSuccess] = useState(false)
+
+  const handleSubmit = async (data: any) => {
+    setLoading(true)
+
+    try {
+      await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+
+      setSuccess(true)
+    } catch (error) {
+      console.error("Error while subitting the form:", error)
+      setError("Unable to submit form. Please try again")
+    }
+
+    setLoading(false)
   }
-}
 
-const ContactPage = () => (
-  <ContactTemplate
-    {...getDefaultProps()}
-    title={data.title}
-    phone={data.phone}
-    email={data.email}
-    handleSubmit={handleSubmit}
-  />
-)
+  return (
+    <ContactTemplate
+      {...getDefaultProps()}
+      title={data.title}
+      phone={data.phone}
+      email={data.email}
+      handleSubmit={handleSubmit}
+      loading={loading}
+      error={error}
+      success={success}
+    />
+  )
+}
 
 export default ContactPage

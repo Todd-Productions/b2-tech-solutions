@@ -13,10 +13,13 @@ export interface IContactState {
 export interface ContactFormProps {
   /* eslint-disable-next-line no-unused-vars */
   handleSubmission: (formData: IContactState) => void
+  loading: boolean
+  error: undefined | string
+  success: boolean
 }
 
 const ContactForm: React.FC<ContactFormProps> = (props) => {
-  const { handleSubmission } = props
+  const { handleSubmission, loading, error, success } = props
   const {
     register,
     handleSubmit,
@@ -27,7 +30,11 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
     handleSubmission(data)
   }
 
-  return (
+  return success ? (
+    <div className="p6 bg-green text-white">
+      Thank you for contacting me. I will be in touch soon!
+    </div>
+  ) : (
     <form onSubmit={handleSubmit(onSubmit)} className="bg-white pb-24">
       <div className="bg-white pb-4">
         <label
@@ -115,9 +122,11 @@ const ContactForm: React.FC<ContactFormProps> = (props) => {
         <span className="px-20 text-red-500">All fields are required*</span>
       )}
 
+      {error && <span className="px-20 text-red-500">{error}</span>}
+
       <div className="text-center w-fit mx-auto">
-        <Button color="green" type="submit" fullWidth>
-          contact us
+        <Button color="green" type="submit" fullWidth disabled={loading}>
+          {loading ? "submitting..." : "contact us"}
         </Button>
       </div>
     </form>

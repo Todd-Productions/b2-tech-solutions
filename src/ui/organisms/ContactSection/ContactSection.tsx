@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Section, Wrapper, SectionSubHeading } from "../../atoms"
+import { Section, SectionSubHeading, Wrapper } from "../../atoms"
 import { ContactForm } from "../../molecules"
 import { IContactState } from "../../molecules/ContactForm/ContactForm"
 import "./contact.css"
@@ -11,10 +11,13 @@ export interface ContactProps {
   email: string
   /* eslint-disable-next-line no-unused-vars */
   handleSubmit: (formData: IContactState) => void
+  loading: boolean
+  error: undefined | string
+  success: boolean
 }
 
 const ContactSection: React.FC<ContactProps> = (props) => {
-  const { email, phone, title, handleSubmit } = props
+  const { email, phone, title, handleSubmit, loading, error, success } = props
   return (
     <Section>
       <Wrapper>
@@ -38,7 +41,12 @@ const ContactSection: React.FC<ContactProps> = (props) => {
             </a>
           </div>
           <div>
-            <ContactForm handleSubmission={handleSubmit} />
+            <ContactForm
+              handleSubmission={handleSubmit}
+              loading={loading}
+              error={error}
+              success={success}
+            />
           </div>
         </div>
       </Wrapper>
