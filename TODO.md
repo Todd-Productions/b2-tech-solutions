@@ -1,5 +1,10 @@
-# Fixes
+# SEO
+- [x] Home page
+  - [x] Missing meta desc
 
-# Misc.
-- [ ] Message sent confirmation
-- [ ] Need fonts form figma: Neue Montreal, Condensed Formula (large text)
+- [x] Contact page
+  - [x] Missing meta desc
+  - [ ] Heading elemtns out of order - phone number
+
+- [x] About page
+  - [x] Missing meta desc

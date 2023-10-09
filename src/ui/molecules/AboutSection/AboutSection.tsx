@@ -38,6 +38,7 @@ const AboutSection: React.FC<AboutProps> = (props) => {
                 src={img as string}
                 alt="Brandon"
                 fill
+                priority
               />
             </div>
           </div>

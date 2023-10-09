@@ -33,16 +33,21 @@ const ContactPage = () => {
   }
 
   return (
-    <ContactTemplate
-      {...getDefaultProps()}
-      title={data.title}
-      phone={data.phone}
-      email={data.email}
-      handleSubmit={handleSubmit}
-      loading={loading}
-      error={error}
-      success={success}
-    />
+    <>
+      <title>Contact B² Tech Solutions for Expert Solutions</title>
+      <meta name="description" content="Get in touch with B² Tech Solutions" />
+
+      <ContactTemplate
+        {...getDefaultProps()}
+        title={data.title}
+        phone={data.phone}
+        email={data.email}
+        handleSubmit={handleSubmit}
+        loading={loading}
+        error={error}
+        success={success}
+      />
+    </>
   )
 }
 

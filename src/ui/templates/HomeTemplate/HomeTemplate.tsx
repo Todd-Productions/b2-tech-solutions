@@ -38,7 +38,7 @@ const HomeTemplate: React.FC<HomeProps> = (props) => {
   } = props
   return (
     <MainLayout {...getMainLayoutProps(props)}>
-      <Hero img={bannerImg as string} />
+      <Hero img={bannerImg as string} priority />
       <div id="work">
         <WorkSection
           header={workTitle}
