@@ -26,7 +26,7 @@ const AboutSection: React.FC<AboutProps> = (props) => {
     <Section>
       <Wrapper>
         <div className="text-center mt-20 mb-12">
-          <SectionHeading>{header}</SectionHeading>
+          <SectionHeading tag="h1">{header}</SectionHeading>
         </div>
         <div className="grid gap-x-24 md:mb-20 justify-center lg:grid-cols-[1fr_1fr]">
           <div className="mx-10 md:ml-12">

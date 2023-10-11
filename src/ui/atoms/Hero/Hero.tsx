@@ -12,12 +12,12 @@ export interface HeroProps {
 const Hero: React.FC<HeroProps> = (props) => {
   const { img, children, priority } = {
     children: (
-      <>
+      <h1>
         <div>
           b<sup>2</sup> tech
         </div>
         <div>solutions</div>
-      </>
+      </h1>
     ),
     ...props,
   }
