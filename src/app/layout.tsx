@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+// import type { Metadata } from "next"
 import { Bebas_Neue as Bebas, Roboto } from "next/font/google"
 import Script from "next/script"
 import React from "react"
@@ -21,10 +21,10 @@ const roboto = Roboto({
   display: "swap",
 })
 
-export const metadata: Metadata = {
-  title: "B2 Tech Solutions",
-  description: "",
-}
+// export const metadata: Metadata = {
+//   title: "B2 Tech Solutions",
+//   description: "",
+// }
 
 interface RootLayoutProps {
   children: React.ReactNode

@@ -24,18 +24,30 @@ const HomePage = () => {
     }
   }, [])
 
-  return userVisited ? (
-    <HomeTemplate
-      {...getDefaultProps()}
-      bannerImg={data.bannerImage}
-      workTitle={data.workTitle}
-      workDescription={data.workDescription}
-      jobCards={data.jobCards}
-      connectTitle={data.connectTitle}
-      connectDescription={data.connectDescription}
-    />
-  ) : (
-    <Splash onClick={handleCookies} />
+  return (
+    <>
+      <title>
+        B2 Tech Solutions: Elevate Your Identity Engineering with Brandon Bollin
+      </title>
+      <meta
+        name="description"
+        content="Drive your IDM/IAM projects to success with Brandon Bollin!"
+      />
+
+      {userVisited ? (
+        <HomeTemplate
+          {...getDefaultProps()}
+          bannerImg={data.bannerImage}
+          workTitle={data.workTitle}
+          workDescription={data.workDescription}
+          jobCards={data.jobCards}
+          connectTitle={data.connectTitle}
+          connectDescription={data.connectDescription}
+        />
+      ) : (
+        <Splash onClick={handleCookies} />
+      )}
+    </>
   )
 }
 
