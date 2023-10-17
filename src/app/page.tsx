@@ -1,19 +1,13 @@
 "use client"
 
 import { hasCookie, setCookie } from "cookies-next"
-import { Metadata, NextPage } from "next"
+import { NextPage } from "next"
 import { useEffect, useState } from "react"
 
 import { HomeTemplate } from "@/ui/templates"
 import getDefaultProps from "../../utils/common"
 import data from "../data/home.json"
 import { Splash } from "../ui/organisms"
-
-export const metadata: Metadata = {
-  title:
-    "B2 Tech Solutions: Elevate Your Identity Engineering with Brandon Bollin",
-  description: "Drive your IDM/IAM projects to success with Brandon Bollin!",
-}
 
 const HomePage: NextPage = () => {
   const [userVisited, setUserVisited] = useState(true)

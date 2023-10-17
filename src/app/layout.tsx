@@ -1,8 +1,8 @@
+import { Metadata } from "next"
 import { Bebas_Neue as Bebas, Roboto } from "next/font/google"
 import Script from "next/script"
 import React from "react"
 
-import { Metadata } from "next"
 import "./globals.css"
 
 //  Figma - font-family: Formula Condensed;
@@ -26,7 +26,8 @@ interface RootLayoutProps {
 
 export const metadata: Metadata = {
   title: "Identity Access Management Consultant | B2 Technical Solutions",
-  description: "Drive your IDM/IAM projects to success with Brandon Bollin!",
+  description:
+    "Privileged access management solutions, SailPoint IdentityIQ, IDM / IAM Consultant with B2 Technical Solutions",
 }
 
 const RootLayout: React.FC<RootLayoutProps> = (props) => {

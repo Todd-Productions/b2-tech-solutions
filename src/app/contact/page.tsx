@@ -2,8 +2,9 @@ import ContactTemplate from "@/ui/templates/ContactTemplate/ContactTemplate"
 import { Metadata, NextPage } from "next"
 
 export const metadata: Metadata = {
-  title: "Contact B² Tech Solutions for Expert Solutions",
-  description: "Get in touch with B² Tech Solutions",
+  title: "Contact Us | B2 Techincal Solutions",
+  description:
+    "Get in touch for our IAM consulting services based in Northwest Ohio",
 }
 
 const ContactPage: NextPage = () => <ContactTemplate />
