@@ -1,21 +1,17 @@
-import { Metadata } from "next"
-import Head from "next/head"
 import { getCanonicalLink } from "../../../utils/common"
 import AboutTemplate from "../../ui/templates/AboutTemplate/AboutTemplate"
 
-export const metadata: Metadata = {
-  title: "Sailpoint IdentityIQ Services | B2 Technical Solutions",
-  description:
-    "Fully insured IDM / IAM based corporation with the fraction of the cost of hiring a typical IT staffing company",
+export function generateMetadata() {
+  return {
+    title: "Sailpoint IdentityIQ Services | B2 Technical Solutions",
+    description:
+      "Fully insured IDM / IAM based corporation with the fraction of the cost of hiring a typical IT staffing company",
+    alternates: {
+      canonical: getCanonicalLink("about"),
+    },
+  }
 }
 
-const AboutPage = () => (
-  <>
-    <Head>
-      <link rel="canonical" href={getCanonicalLink("/about")} />
-    </Head>
-    <AboutTemplate />
-  </>
-)
+const AboutPage = () => <AboutTemplate />
 
 export default AboutPage

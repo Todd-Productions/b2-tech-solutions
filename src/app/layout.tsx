@@ -1,8 +1,8 @@
-import { Metadata } from "next"
 import { Bebas_Neue as Bebas, Roboto } from "next/font/google"
 import Script from "next/script"
 import React from "react"
 
+import { getCanonicalLink } from "../../utils/common"
 import "./globals.css"
 
 //  Figma - font-family: Formula Condensed;
@@ -24,10 +24,15 @@ interface RootLayoutProps {
   children: React.ReactNode
 }
 
-export const metadata: Metadata = {
-  title: "Identity Access Management Consultant | B2 Technical Solutions",
-  description:
-    "Privileged access management solutions, SailPoint IdentityIQ, IDM / IAM Consultant with B2 Technical Solutions",
+export async function generateMetadata() {
+  return {
+    title: "Identity Access Management Consultant | B2 Technical Solutions",
+    description:
+      "Privileged access management solutions, SailPoint IdentityIQ, IDM / IAM Consultant with B2 Technical Solutions",
+    alternates: {
+      canonical: getCanonicalLink(null),
+    },
+  }
 }
 
 const RootLayout: React.FC<RootLayoutProps> = (props) => {
