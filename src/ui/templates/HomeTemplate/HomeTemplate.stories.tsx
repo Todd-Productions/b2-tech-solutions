@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
 import HomeTemplate from "./HomeTemplate"
-import { navLinks, footerLinks, contactLink } from "../../../data/siteMeta"
 
 const meta: Meta<typeof HomeTemplate> = {
   title: "ui/templates/HomeTemplate",
@@ -14,9 +13,6 @@ type Story = StoryObj<typeof HomeTemplate>
 
 export const Default: Story = {
   args: {
-    navLinks,
-    footerLinks,
-    hireMeLink: contactLink,
     jobCards: [
       {
         img: "https://source.unsplash.com/random",

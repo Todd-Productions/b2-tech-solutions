@@ -1,23 +1,44 @@
-import React from "react"
+"use client"
+
+import React, { useState } from "react"
 
 import { Section, SectionSubHeading, Wrapper } from "../../atoms"
 import { ContactForm } from "../../molecules"
-import { IContactState } from "../../molecules/ContactForm/ContactForm"
 import "./contact.css"
 
 export interface ContactProps {
   title: string
   phone: string
   email: string
-  /* eslint-disable-next-line no-unused-vars */
-  handleSubmit: (formData: IContactState) => void
-  loading: boolean
-  error: undefined | string
-  success: boolean
 }
 
 const ContactSection: React.FC<ContactProps> = (props) => {
-  const { email, phone, title, handleSubmit, loading, error, success } = props
+  const { email, phone, title } = props
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<undefined | string>(undefined)
+  const [success, setSuccess] = useState(false)
+
+  const handleSubmit = async (data: any) => {
+    setLoading(true)
+
+    try {
+      await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+
+      setSuccess(true)
+    } catch (error) {
+      console.error("Error while subitting the form:", error)
+      setError("Unable to submit form. Please try again")
+    }
+
+    setLoading(false)
+  }
+
   return (
     <Section>
       <Wrapper>

@@ -1,28 +1,12 @@
-"use client"
+import { Metadata } from "next"
+import AboutTemplate from "../../ui/templates/AboutTemplate/AboutTemplate"
 
-import React from "react"
+export const metadata: Metadata = {
+  title: "Corporation Sailpoint IdentityIQ Services | B2 Technical Solutions",
+  description:
+    "Fully insured IDM / IAM based corporation with the fraction of the cost of hiring a typical IT staffing company",
+}
 
-import { AboutTemplate } from "../../ui/templates"
-import getDefaultProps from "../../../utils/common"
-import data from "../../data/about.json"
-
-const AboutPage = () => (
-  <>
-    <title>About B² Technical Solutions</title>
-    <meta name="description" content="Who's Brandon? What is B²?" />
-
-    <AboutTemplate
-      {...getDefaultProps()}
-      aboutHeading={data.title}
-      aboutSubheading={data.subtitle}
-      aboutImg={data.aboutImg}
-      aboutDescription={data.aboutDescription}
-      educationHeader={data.educationHeader}
-      educationHistory={data.education}
-      connectDescription={data.connectDescription}
-      jobs={data.jobs}
-    />
-  </>
-)
+const AboutPage = () => <AboutTemplate />
 
 export default AboutPage

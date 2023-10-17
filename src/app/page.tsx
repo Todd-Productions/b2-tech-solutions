@@ -1,14 +1,15 @@
 "use client"
 
-import React, { useEffect, useState } from "react"
-import { setCookie, hasCookie } from "cookies-next"
+import { hasCookie, setCookie } from "cookies-next"
+import { NextPage } from "next"
+import { useEffect, useState } from "react"
 
-import { HomeTemplate } from "../ui/templates"
-import { Splash } from "../ui/organisms"
+import { HomeTemplate } from "@/ui/templates"
 import getDefaultProps from "../../utils/common"
 import data from "../data/home.json"
+import { Splash } from "../ui/organisms"
 
-const HomePage = () => {
+const HomePage: NextPage = () => {
   const [userVisited, setUserVisited] = useState(true)
 
   const handleCookies = () => {
@@ -24,30 +25,18 @@ const HomePage = () => {
     }
   }, [])
 
-  return (
-    <>
-      <title>
-        B2 Tech Solutions: Elevate Your Identity Engineering with Brandon Bollin
-      </title>
-      <meta
-        name="description"
-        content="Drive your IDM/IAM projects to success with Brandon Bollin!"
-      />
-
-      {userVisited ? (
-        <HomeTemplate
-          {...getDefaultProps()}
-          bannerImg={data.bannerImage}
-          workTitle={data.workTitle}
-          workDescription={data.workDescription}
-          jobCards={data.jobCards}
-          connectTitle={data.connectTitle}
-          connectDescription={data.connectDescription}
-        />
-      ) : (
-        <Splash onClick={handleCookies} />
-      )}
-    </>
+  return userVisited ? (
+    <HomeTemplate
+      {...getDefaultProps()}
+      bannerImg={data.bannerImage}
+      workTitle={data.workTitle}
+      workDescription={data.workDescription}
+      jobCards={data.jobCards}
+      connectTitle={data.connectTitle}
+      connectDescription={data.connectDescription}
+    />
+  ) : (
+    <Splash onClick={handleCookies} />
   )
 }
 

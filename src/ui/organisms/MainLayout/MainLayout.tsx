@@ -1,29 +1,28 @@
-import React, { ReactNode } from "react"
+"use client"
 
-import { Header, Footer } from "../../molecules"
-import { INavLink } from "../../../types"
+import React, { ReactNode } from "react"
+import { contactLink, footerLinks, navLinks } from "../../../data/siteMeta"
+
+import { Footer, Header } from "../../molecules"
 
 export interface MainLayoutProps {
   children?: ReactNode
-  navLinks: INavLink[]
-  footerLinks: INavLink[]
-  hireLink: INavLink
   displayHireMobile?: boolean
 }
 
 const MainLayout: React.FC<MainLayoutProps> = (props: MainLayoutProps) => {
-  const { children, navLinks, footerLinks, hireLink, displayHireMobile } = props
+  const { children, displayHireMobile } = props
 
   return (
-    <div>
+    <>
       <Header
         links={navLinks}
-        hireLink={hireLink}
+        hireLink={contactLink}
         displayHireMobile={displayHireMobile}
       />
       <main>{children}</main>
       <Footer links={footerLinks} />
-    </div>
+    </>
   )
 }
 

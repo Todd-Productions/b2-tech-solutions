@@ -1,49 +1,34 @@
-import React from "react"
+"use client"
 
+import aboutData from "@/data/about.json"
+import { contactLink } from "@/data/siteMeta"
 import { AboutSection, ConnectSection, EducationSection } from "../../molecules"
-import { MainLayout, ExperienceSection } from "../../organisms"
-import { DefaultProps, getMainLayoutProps } from "../HomeTemplate/HomeTemplate"
+import { ExperienceSection, MainLayout } from "../../organisms"
 
-// @types
-import { UrlType, IJobInfo } from "../../../types"
-import { IEducation } from "../../molecules/EducationSection/EducationSection"
-
-export interface AboutProps extends DefaultProps {
-  aboutHeading: string
-  aboutSubheading: string
-  aboutImg: UrlType
-  aboutDescription: string[]
-  educationHeader: string
-  educationHistory: IEducation[]
-  jobs: IJobInfo[]
-  connectDescription: string[]
-}
-
-const AboutTemplate: React.FC<AboutProps> = (props) => {
+const AboutTemplate = () => {
   const {
-    aboutHeading,
-    aboutSubheading,
+    title,
+    subtitle,
     aboutImg,
     aboutDescription,
-    educationHistory,
+    education,
     educationHeader,
     jobs,
-    hireMeLink,
     connectDescription,
-  } = props
+  } = aboutData
   return (
-    <MainLayout {...getMainLayoutProps(props)}>
+    <MainLayout>
       <AboutSection
-        header={aboutHeading}
-        subHeader={aboutSubheading}
+        header={title}
+        subHeader={subtitle}
         img={aboutImg}
         description={aboutDescription}
       />
       <ExperienceSection jobs={jobs} />
 
-      <EducationSection header={educationHeader} education={educationHistory} />
+      <EducationSection header={educationHeader} education={education} />
 
-      <ConnectSection hireLink={hireMeLink} description={connectDescription} />
+      <ConnectSection hireLink={contactLink} description={connectDescription} />
     </MainLayout>
   )
 }
