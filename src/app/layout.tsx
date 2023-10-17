@@ -1,8 +1,8 @@
-// import type { Metadata } from "next"
 import { Bebas_Neue as Bebas, Roboto } from "next/font/google"
 import Script from "next/script"
 import React from "react"
 
+import { Metadata } from "next"
 import "./globals.css"
 
 //  Figma - font-family: Formula Condensed;
@@ -13,7 +13,6 @@ const babas = Bebas({
   display: "swap",
 })
 
-// Figma - font-family: Neue Montreal;
 const roboto = Roboto({
   weight: "400",
   subsets: ["latin"],
@@ -21,13 +20,13 @@ const roboto = Roboto({
   display: "swap",
 })
 
-// export const metadata: Metadata = {
-//   title: "B2 Tech Solutions",
-//   description: "",
-// }
-
 interface RootLayoutProps {
   children: React.ReactNode
+}
+
+export const metadata: Metadata = {
+  title: "Identity Access Management Consultant | B2 Technical Solutions",
+  description: "Drive your IDM/IAM projects to success with Brandon Bollin!",
 }
 
 const RootLayout: React.FC<RootLayoutProps> = (props) => {

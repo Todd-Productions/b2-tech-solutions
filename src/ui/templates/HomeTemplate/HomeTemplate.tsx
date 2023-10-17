@@ -1,17 +1,12 @@
 import React from "react"
 
+import { contactLink } from "@/data/siteMeta"
+import { IImageCard, UrlType } from "../../../types"
 import { Hero } from "../../atoms"
-import { WorkSection, ConnectSection } from "../../molecules"
+import { ConnectSection, WorkSection } from "../../molecules"
 import { MainLayout } from "../../organisms"
-import { INavLink, UrlType, IImageCard } from "../../../types"
 
-export interface DefaultProps {
-  navLinks: INavLink[]
-  footerLinks: INavLink[]
-  hireMeLink: INavLink
-}
-
-export interface HomeProps extends DefaultProps {
+export interface HomeProps {
   bannerImg: UrlType
   workTitle: string
   workDescription: string
@@ -20,15 +15,8 @@ export interface HomeProps extends DefaultProps {
   connectDescription: string[]
 }
 
-export const getMainLayoutProps = (data: DefaultProps) => ({
-  navLinks: data.navLinks,
-  footerLinks: data.footerLinks,
-  hireLink: data.hireMeLink,
-})
-
 const HomeTemplate: React.FC<HomeProps> = (props) => {
   const {
-    hireMeLink,
     jobCards,
     bannerImg,
     workTitle,
@@ -37,7 +25,7 @@ const HomeTemplate: React.FC<HomeProps> = (props) => {
     connectDescription,
   } = props
   return (
-    <MainLayout {...getMainLayoutProps(props)}>
+    <MainLayout>
       <Hero img={bannerImg as string} priority />
       <div id="work">
         <WorkSection
@@ -49,7 +37,7 @@ const HomeTemplate: React.FC<HomeProps> = (props) => {
       <ConnectSection
         header={connectTitle}
         description={connectDescription}
-        hireLink={hireMeLink}
+        hireLink={contactLink}
       />
     </MainLayout>
   )
