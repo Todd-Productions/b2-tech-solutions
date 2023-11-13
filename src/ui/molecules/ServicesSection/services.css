@@ -1,0 +1,4 @@
+.service-content a {
+  text-decoration: underline;
+  color: var(--tp-color-green-500);
+}

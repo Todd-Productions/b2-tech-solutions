@@ -5,9 +5,13 @@ export const navLinks: INavLink[] = [
     label: "Home.",
     url: ".",
   },
+  // {
+  //   label: "Work.",
+  //   url: "/#work",
+  // },
   {
-    label: "Work.",
-    url: "/#work",
+    label: "Services.",
+    url: "/identity-access-management-services",
   },
   {
     label: "About.",

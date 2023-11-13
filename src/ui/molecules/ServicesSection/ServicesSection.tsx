@@ -1,25 +1,52 @@
-import React from "react"
+import React, { ReactNode } from "react"
+import slugify from "slugify"
 
-import { Section, Wrapper } from "../../atoms"
+import "./services.css"
 
-export interface ExperienceProps {}
+import {
+  Section,
+  Wrapper,
+  SectionSubHeading,
+  SectionHeading,
+} from "../../atoms"
 
-const ExperienceSection: React.FC<ExperienceProps> = () => (
-  // const { jobs } = props
+interface IService {
+  heading: string
+  content: ReactNode
+}
 
-  <Section>
-    <Wrapper>
-      <div className="">
-        <ul className="pl-4">
-          {/* {jobs.map((job) => (
-              <li key={slugify(String(job.company))}>
-                <JobInfoArea job={job} key={slugify(job.company as string)} />
+export interface ServicesProps {
+  heading: string
+  services: IService[]
+}
+
+const ServicesSection: React.FC<ServicesProps> = (props) => {
+  const { heading, services } = props
+
+  return (
+    <Section>
+      <Wrapper>
+        <div className="mt-32  mx-20">
+          <SectionHeading tag="h1" size="small">
+            {heading}
+          </SectionHeading>
+          <ul className="pl-4 mt-8">
+            {services.map((service) => (
+              <li className="pb-8" key={slugify(String(service.heading))}>
+                <SectionSubHeading>{service.heading}</SectionSubHeading>
+                <div
+                  className="leading-10 service-content"
+                  dangerouslySetInnerHTML={{
+                    __html: service.content as string,
+                  }}
+                />
               </li>
-            ))} */}
-        </ul>
-      </div>
-    </Wrapper>
-  </Section>
-)
+            ))}
+          </ul>
+        </div>
+      </Wrapper>
+    </Section>
+  )
+}
 
-export default ExperienceSection
+export default ServicesSection

@@ -14,3 +14,19 @@
     font-size: 225px;
   }
 }
+
+.size-small {
+  line-height: 125%;
+}
+
+@screen lg {
+  .size-small {
+    font-size: 75px !important;
+  }
+}
+
+@screen xl {
+  .size-small {
+    font-size: 100px !important;
+  }
+}
