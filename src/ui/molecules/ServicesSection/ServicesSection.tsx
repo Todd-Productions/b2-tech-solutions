@@ -26,7 +26,7 @@ const ServicesSection: React.FC<ServicesProps> = (props) => {
   return (
     <Section>
       <Wrapper>
-        <div className="mt-32  mx-20">
+        <div className="mt-40 md:mt-32 mx-20">
           <SectionHeading tag="h1" size="small">
             {heading}
           </SectionHeading>
