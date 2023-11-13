@@ -9,10 +9,8 @@
   background-color: rgba(146, 200, 62, 0.95);
   z-index: 9;
   padding: 5rem 2rem;
-  display: none;
   font-size: 2rem;
   transition: all 500ms;
-
   left: -100%;
 }
 
@@ -23,11 +21,4 @@
 .drawer-is-visible {
   left: 0;
   display: block;
-}
-
-@screen md {
-  .drawer,
-  .drawer-is-visible {
-    display: none !important;
-  }
 }
