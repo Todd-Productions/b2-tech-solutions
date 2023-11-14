@@ -7,3 +7,5 @@ export { default as ExperienceSidebar } from "./ExperienceSidebar/ExperienceSide
 export { default as AboutSection } from "./AboutSection/AboutSection"
 export { default as ContactForm } from "./ContactForm/ContactForm"
 export { default as EducationSection } from "./EducationSection/EducationSection"
+export { default as ServicesSection } from "./ServicesSection/ServicesSection"
+export { default as Drawer } from "./Drawer/Drawer"

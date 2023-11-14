@@ -10,6 +10,10 @@ export const navLinks: INavLink[] = [
     url: "/#work",
   },
   {
+    label: "Services.",
+    url: "/identity-access-management-services",
+  },
+  {
     label: "About.",
     url: "/about",
   },

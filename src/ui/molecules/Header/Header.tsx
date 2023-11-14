@@ -2,8 +2,10 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import React from "react"
+import React, { useState, useRef } from "react"
 
+import useOnClickOutside from "../../../../hooks/useOnClickOutside"
+import Drawer from "../Drawer/Drawer"
 import { Button } from "../../atoms"
 import Nav from "../Nav/Nav"
 import "./header.css"
@@ -19,6 +21,17 @@ export interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = (props) => {
   const { links, hireLink, displayHireMobile } = props
+  const [isOpen, setOpenState] = useState(false)
+
+  const drawerRef = useRef(null)
+
+  const toggleOpen = () => setOpenState((o) => !o)
+
+  const handleOutsideClick = () => {
+    if (isOpen) setOpenState(false)
+  }
+
+  useOnClickOutside(drawerRef, handleOutsideClick)
 
   return (
     <>
@@ -36,9 +49,16 @@ const Header: React.FC<HeaderProps> = (props) => {
             </Link>
           </div>
           <div>
-            <Nav links={links} />
+            <Nav links={links} onHamburgerClick={toggleOpen} />
+
+            <Drawer
+              ref={drawerRef}
+              isOpen={isOpen}
+              links={links}
+              onClose={() => setOpenState(false)}
+            />
           </div>
-          <div className="hidden sm:block header-item">
+          <div className="hidden md:block header-item">
             <Link href={hireLink.url}>
               <Button color="green" includeArrow>
                 {hireLink.label}
@@ -48,7 +68,7 @@ const Header: React.FC<HeaderProps> = (props) => {
         </div>
       </header>
       {displayHireMobile === true ? null : (
-        <div className="top-32 w-full flex justify-center z-10 fixed sm:hidden">
+        <div className="top-32 w-full flex justify-center mobile-hire-btn fixed sm:hidden">
           <Link href={hireLink.url}>
             <Button color="green" includeArrow>
               {hireLink.label}
