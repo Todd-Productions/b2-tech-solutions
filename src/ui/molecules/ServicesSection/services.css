@@ -2,3 +2,7 @@
   text-decoration: underline;
   color: var(--tp-color-green-500);
 }
+
+.service-content h4 {
+  font-weight: bold;
+}

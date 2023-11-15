@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react"
 import slugify from "slugify"
+import Image from "next/image"
 
 import "./services.css"
 
@@ -13,6 +14,7 @@ import {
 interface IService {
   heading: string
   content: ReactNode
+  img?: string
 }
 
 export interface ServicesProps {
@@ -33,13 +35,27 @@ const ServicesSection: React.FC<ServicesProps> = (props) => {
           <ul className="pl-4 mt-8">
             {services.map((service) => (
               <li className="pb-8" key={slugify(String(service.heading))}>
-                <SectionSubHeading>{service.heading}</SectionSubHeading>
-                <div
-                  className="leading-10 service-content"
-                  dangerouslySetInnerHTML={{
-                    __html: service.content as string,
-                  }}
-                />
+                <div className="grid items-center justify-items-center gap-12 lg:grid-cols-[3fr_1fr]">
+                  <div>
+                    <SectionSubHeading>{service.heading}</SectionSubHeading>
+                    <div
+                      className="leading-10 service-content"
+                      dangerouslySetInnerHTML={{
+                        __html: service.content as string,
+                      }}
+                    />
+                  </div>
+                  {service.img && (
+                    <div className="relative w-80 h-80 rounded-full">
+                      <Image
+                        className="object-cover rounded-full"
+                        src={service.img}
+                        alt=""
+                        fill
+                      />
+                    </div>
+                  )}
+                </div>
               </li>
             ))}
           </ul>
