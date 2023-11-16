@@ -3,11 +3,11 @@ import { ServicesTemplate } from "../../ui/templates"
 
 export function generateMetadata() {
   return {
-    title: "Identity and Access Management Services | B2 Technical Solutions",
+    title: "IT Support, IAM & IDAM Services | B2 Technical Solutions",
     description:
-      "Identity and Access Management Services for SMBs and Large Enterprises",
+      "Identity, Access Management, and IT Support Services for large and small businesses.",
     alternates: {
-      canonical: getCanonicalLink("services"),
+      canonical: getCanonicalLink("identity-access-management-and-it-services"),
     },
   }
 }

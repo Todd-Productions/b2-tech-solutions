@@ -11,7 +11,7 @@ export const navLinks: INavLink[] = [
   },
   {
     label: "Services.",
-    url: "/identity-access-management-services",
+    url: "/identity-access-management-and-it-services",
   },
   {
     label: "About.",
