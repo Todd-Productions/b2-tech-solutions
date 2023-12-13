@@ -2,6 +2,7 @@ import {
   faTiktok,
   faFacebookF,
   faYoutube,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
 
 import { INavLink, IFooterLink } from "@/types"
@@ -29,6 +30,10 @@ export const footerLinks: IFooterLink[] = [
   {
     icon: faFacebookF,
     url: "https://www.facebook.com/b2techOhio/",
+  },
+  {
+    icon: faLinkedin,
+    url: "https://www.linkedin.com/in/brandonbollin/",
   },
   {
     icon: faTiktok,
