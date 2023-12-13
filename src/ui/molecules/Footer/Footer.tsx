@@ -1,17 +1,20 @@
 import React from "react"
-import Link from "next/link"
 import slugify from "slugify"
 
-import { INavLink } from "../../../types"
-import { Wrapper, Button } from "../../atoms"
+import { IFooterLink } from "@/types"
+import { Wrapper, Icon } from "../../atoms"
+
+// @types
+
 import "./footer.css"
 
 export interface FooterProps {
-  links: INavLink[]
+  links: IFooterLink[]
 }
 
 const Footer: React.FC<FooterProps> = (props) => {
   const { links } = props
+
   return (
     <footer>
       <Wrapper>
@@ -23,13 +26,17 @@ const Footer: React.FC<FooterProps> = (props) => {
           </div>
           <div className="flex flex-col md:flex-row items-center">
             {links.map((link) => (
-              <Link
+              <a
                 className="footer-link mx-4 p-0"
                 href={link.url}
-                key={slugify(link.label)}
+                key={slugify(link.url)}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Button>{link.label}</Button>
-              </Link>
+                <div className="icon-span border border-black-500 p-2 rounded-full w-10 h-10 flex items-center justify-center">
+                  <Icon icon={link.icon} />
+                </div>
+              </a>
             ))}
           </div>
         </div>

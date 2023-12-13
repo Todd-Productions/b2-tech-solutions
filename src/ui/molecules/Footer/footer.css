@@ -1,13 +1,11 @@
 @import "tailwindcss/base";
 
 .footer-link div {
-  border: none;
   margin: 0;
   padding: 0;
 }
 
 .footer-link button {
-  border: none !important;
   margin: 0 15px !important;
 }
 
@@ -21,4 +19,19 @@
       flex-direction: initial;
     }
   }
+}
+
+.icon-span div {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.icon-span:hover div {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+.icon-span:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
 }
