@@ -1,4 +1,10 @@
-import { INavLink } from "@/types"
+import {
+  faTiktok,
+  faFacebookF,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons"
+
+import { INavLink, IFooterLink } from "@/types"
 
 export const navLinks: INavLink[] = [
   {
@@ -19,18 +25,18 @@ export const navLinks: INavLink[] = [
   },
 ]
 
-export const footerLinks: INavLink[] = [
+export const footerLinks: IFooterLink[] = [
   {
-    label: "Facebook",
+    icon: faFacebookF,
     url: "https://www.facebook.com/b2techOhio/",
   },
   {
-    label: "Linkedin",
-    url: "https://www.linkedin.com/in/brandonbollin/",
+    icon: faTiktok,
+    url: "https://www.tiktok.com/@b2technicalsolutions",
   },
   {
-    label: "X (Twitter)",
-    url: "https://twitter.com/b2techOhio",
+    icon: faYoutube,
+    url: "https://www.youtube.com/@B2TechnicalSolutions",
   },
 ]
 
